@@ -1,0 +1,160 @@
+<section class="section-slideshow pb-5">
+    <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let slide of apiData">
+            <ng-template class="slide" carouselSlide [id]="slide.id">
+                <div class="slideshow-st">
+                    <img [src]="slide.url" [alt]="slide.id" [title]="slide.id" class="bg-slideshow-st">
+                    <div class="slideshow-st-content d-flex flex-column align-items-center justify-content-center">
+                        <div class="title-slideshow-st" data-aos="fade-up" data-aos-duration="1000">
+                            <label class="text-white">{{slide.title}}</label>
+                        </div>
+                        <div class="description-slideshow-st" data-aos="fade-up" data-aos-duration="3000">
+                            <p class="text-white">
+                                Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>  
+</section>
+
+<section class="section-services py-5">
+    <div class="title-services d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="3000">
+        <h2 class="About-Big">Our Services</h2>
+    </div>
+    <div class="container">
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded float-start"/>
+            </div>
+    
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 class="title-outline" style="color: #4162ac;">WEB APPLICATION</h1>
+                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
+                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 class="title-outline" style="color: #4162ac;">GRAPHIC DESIGN</h1>
+                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
+                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                </div>
+            </div>
+            <div class="image-services" data-aos="fade-down-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/augmented-reality.jpg" class="rounded float-start"/>
+            </div>
+        </div>
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded float-start"/>
+            </div>
+    
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 class="title-outline" style="color: #4162ac;">DIGITAL MARKETING</h1>
+                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
+                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 class="title-outline" style="color: #4162ac;">WEB APPLICATION</h1>
+                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
+                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                </div>
+            </div>
+            <div class="image-services" data-aos="fade-down-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/augmented-reality.jpg" class="rounded float-start"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-about">
+    <img src="../../../../assets/img/thumbnail.jpeg" class="card-img img-fluid">
+    <div class="card text-white">
+        <div class="content-about d-flex flex-column align-items-center justify-content-md-center" data-aos="fade-up" data-aos-duration="3000">
+            <h3 class="title-about" style="font-weight: bold;">About Us</h3>
+            <p class="desc-about">
+                Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section-work py-5">
+    <div class="title-box text-center">
+        <span class="title">Our Works</span>
+    </div>
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="3000">
+        <swiper
+        [effect]="'coverflow'"
+        [grabCursor]="true"
+        [centeredSlides]="true"
+        [coverflowEffect]="coverflowEffect"
+        [pagination]="true"
+        class="mySwiper"
+        >
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-1.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-2.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-3.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-5.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-6.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-7.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-8.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-9.jpg" class="img-swiper" /></ng-template>
+        </swiper>
+    </div>
+</section>
+
+<section class="section-teams d-flex flex-column align-items-center justify-content-md-center py-5">
+    <div class="intro-teams">
+        <h3 class="title" data-aos="fade-up" data-aos-duration="3000"> Our Teams </h3>
+    </div>
+    <div class="teams-detail text-center align-items-center">
+        <div class="d-flex">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/adrian.png" class="img-team"/>
+                <h3 class="name-team">Adrian Milano</h3>
+                <span>Penanggung Jawab</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/shanti.png" class="img-team"/>
+                    <h3 class="name-team">Shanti Annisya. R</h3>
+                <span>PSDM & Controlling</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/wisnu.png" class="img-team"/>
+                <h3 class="name-team">Wisnu Aldy Padma .K</h3>
+                <span>Desain Pembelajaran</span>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/mila.png" class="img-team"/>
+                <h3 class="name-team">Nur Charisa</h3>
+                <span>Administrasi</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/tata.png" class="img-team"/>
+                <h3 class="name-team">Regita Syahyani</h3>
+                <span>Desain Grafis</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/cile.png" class="img-team"/>
+                <h3 class="name-team">Hasna Kamila</h3>
+                <span>Program Dan Acara</span>
+            </div>
+        </div>
+    </div>
+</section>
