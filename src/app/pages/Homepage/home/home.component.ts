@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows : true
+    // slideShadows : true
   }
 
   constructor() { 

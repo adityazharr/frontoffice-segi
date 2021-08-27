@@ -5,6 +5,11 @@ body {
     flex-direction: column;
 }
 
+/* GENERAL */
+.border-right {
+    border-right: 1px solid grey;
+}
+/* END GENERAL */
 /* ADIT CSS */
 .navbar{
 	flex: 1 1 auto;
@@ -20,7 +25,15 @@ body {
 /* END ADIT CSS */
 
 .header {
-    border-bottom: 1px solid black;
+    position: fixed !important;
+    z-index: 999;
+    width: 100%;
+    /* border-bottom: 1px solid black; */
+}
+
+.header-scrolled {
+    transition: 0.5s;
+    box-shadow: 0px 3px 5px grey;
 }
 
 .navbar-dark {
@@ -51,14 +64,14 @@ body {
     background-color: white;
 }
 .owl-carousel .owl-item img {
-    height : 90vh;
+    height : 100vh;
     object-fit: cover;
 }
 
 .bg-slideshow-st{
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    opacity: 0.9;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-color: black;
 }
 
 .slideshow-st-content {
@@ -128,8 +141,7 @@ body {
 
 /* SECTION 3 */
 .section-about .card{
-    background-color: black;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.5);
 }
 .section-about .card-img{
 	position: fixed;
@@ -161,7 +173,7 @@ body {
 
 .section-work .title-box .title {
     font-size: 3rem;
-	color :#2B5278;
+    color: #4687CE;
 }
 
 .img-swiper {
@@ -172,12 +184,12 @@ body {
 
 /* SECTION 5 */
 .section-teams {
-    /* height : 100vh; */
+    height : 150vh;
     background-color: white;
 }
 .intro-teams .title {
     font-size: 3rem;
-	color :#2B5278;
+	color :#4687CE;
 }
 
 .name-team {
@@ -195,29 +207,75 @@ body {
 }
 /* END SECTION 5 */
 
+
+/* FAQ */
+
+/* SECTION 1 */
+.section-faq-background .img-background img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.faq-title {
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq-title h3 {
+    font-size: 50px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #1f2022;
+}
+
+.contact .content {
+    padding-left: 3rem;
+    line-height: 100px;
+    transition: .5s;
+}
+
+.contact .content a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact .content:hover {
+    background-color: #A8A8A8;
+}
+/* END SECTION 1 */
+
+/* END FAQ */
+
+
 /* FOOTER */
 .footer {
     background-color: white;
-    padding : auto 0;
     width: 100%;
-    text-align: center;
-    border-top : 1px solid #4687CE;
+    /* border-top : 1px solid #4687CE; */
 }
 
 .link-footer {
-    margin-bottom: 1rem;
-    color: black;
-    text-decoration: none;
+    margin-bottom: 3rem;
 }
 
 .icon-footer {
     text-align: left;
-    line-height: 5vh;
 }
 .icon {
+    font-size: 25px;
     background-color: #4687CE;
-    border-radius: 5px;
+    border : 1px solid #4687CE;
+    border-radius: 25%;
     padding: 10px;
-    margin-right: 1rem;
+    transition: .5s;
+}
+
+.icon:hover {
+    border : 1px solid #4687CE;
+    background-color: white;
+    color:#4687CE !important;
 }
 /* END FOOTER */
+

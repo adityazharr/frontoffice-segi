@@ -1,4 +1,4 @@
-<section class="section-slideshow pb-5">
+<section class="section-slideshow pb-5" id="slideshow">
     <owl-carousel-o [options]="customOptions">
         <ng-container *ngFor="let slide of apiData">
             <ng-template class="slide" carouselSlide [id]="slide.id">
@@ -20,7 +20,7 @@
     </owl-carousel-o>  
 </section>
 
-<section class="section-services py-5">
+<section class="section-services py-5" id="service">
     <div class="title-services d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="3000">
         <h2 class="About-Big">Our Services</h2>
     </div>
@@ -78,7 +78,7 @@
     </div>
 </section>
 
-<section class="section-about">
+<section class="section-about" id="about-us">
     <img src="../../../../assets/img/thumbnail.jpeg" class="card-img img-fluid">
     <div class="card text-white">
         <div class="content-about d-flex flex-column align-items-center justify-content-md-center" data-aos="fade-up" data-aos-duration="3000">
@@ -91,9 +91,9 @@
     </div>
 </section>
 
-<section class="section-work py-5">
+<section class="section-work py-5" id="work">
     <div class="title-box text-center">
-        <span class="title">Our Works</span>
+        <h3 class="title">Our Works</h3>
     </div>
     <div class="container-fluid" data-aos="fade-up" data-aos-duration="3000">
         <swiper
@@ -101,7 +101,7 @@
         [grabCursor]="true"
         [centeredSlides]="true"
         [coverflowEffect]="coverflowEffect"
-        [pagination]="true"
+        [loop]="true"
         class="mySwiper"
         >
             <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-1.jpg" class="img-swiper" /></ng-template>
@@ -117,7 +117,7 @@
     </div>
 </section>
 
-<section class="section-teams d-flex flex-column align-items-center justify-content-md-center py-5">
+<section class="section-teams d-flex flex-column align-items-center justify-content-md-center" id='teams'>
     <div class="intro-teams">
         <h3 class="title" data-aos="fade-up" data-aos-duration="3000"> Our Teams </h3>
     </div>

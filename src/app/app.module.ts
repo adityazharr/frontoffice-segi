@@ -11,9 +11,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { OwlModule } from 'ngx-owl-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SwiperModule } from 'swiper/angular';
+import { FaqComponent } from './pages/faq/faq.component';
 
 const routes = [
   {path: '', component: HomeComponent},
+  {path: 'faq', component: FaqComponent},
+  {path: 'article', component: HomeComponent},
 ]
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ const routes = [
     HeaderComponent,
     HomeComponent,
     FooterComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
