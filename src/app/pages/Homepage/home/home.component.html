@@ -1,77 +1,103 @@
 <section class="section-slideshow pb-5" id="slideshow">
-    <owl-carousel-o [options]="customOptions">
-        <ng-container *ngFor="let slide of apiData">
-            <ng-template class="slide" carouselSlide [id]="slide.id">
-                <div class="slideshow-st">
-                    <img [src]="slide.url" [alt]="slide.id" [title]="slide.id" class="bg-slideshow-st">
-                    <div class="slideshow-st-content d-flex flex-column align-items-center justify-content-center">
-                        <div class="title-slideshow-st" data-aos="fade-up" data-aos-duration="1000">
-                            <label class="text-white">{{slide.title}}</label>
-                        </div>
-                        <div class="description-slideshow-st" data-aos="fade-up" data-aos-duration="3000">
-                            <p class="text-white">
-                                Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.
-                            </p>
-                        </div>
-                    </div>
+    <div class="slideshow-st container">
+        <div class="slideshow-st-content d-flex flex-row align-items-center justify-content-between">
+            <div class="slideshow-st-content align-items-start justify-content-center">
+                <div class="title-slideshow-st" data-aos="fade-up" data-aos-duration="1000">
+                    <label class="text-blue">SECANGKIR TEKNOLOGI</label>
                 </div>
-            </ng-template>
-        </ng-container>
-    </owl-carousel-o>  
+                <div class="description-slideshow-st" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <p>
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <button class="btn btn-primary btn-block"> Register Now  <fa-icon [icon]="iconArrowRight"></fa-icon></button>
+                </div>
+            </div>
+            <div class="thumbnail-slideshow">
+                <img src="../../../../assets/img/augmented-reality.jpg" class="thumbnail-slideshow-img"/>
+                <!-- <owl-carousel-o [options]="customOptions">
+                    <ng-container *ngFor="let slide of apiData">
+                        <ng-template class="slide" carouselSlide [id]="slide.id">
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o> -->
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="section-services py-5" id="service">
-    <div class="title-services d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="3000">
+    <div class="title-services d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="2000">
         <h2 class="About-Big">Our Services</h2>
     </div>
     <div class="container">
         <div class="body-services d-flex flex-row justify-content-center mb-5">
-            <div class="image-services" data-aos="fade-down-right" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
                 <img src="../../../../assets/img/thumbnail.jpeg" class="rounded float-start"/>
             </div>
     
             <div class="d-flex flex-row align-items-center mx-3">
                 <div class="flex-row align-items-center">
-                    <h1 class="title-outline" style="color: #4162ac;">WEB APPLICATION</h1>
-                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
-                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                    <h1 style="color: #4162ac;">WEB APPLICATION</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block" aria-current="page" routerLink="/services/detail"> See more  <fa-icon [icon]="iconArrowRight"></fa-icon></a>
                 </div>
             </div>
         </div>
         <div class="body-services d-flex flex-row justify-content-center mb-5">
             <div class="d-flex flex-row align-items-center mx-3">
                 <div class="flex-row align-items-center">
-                    <h1 class="title-outline" style="color: #4162ac;">GRAPHIC DESIGN</h1>
-                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
-                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                    <h1 style="color: #4162ac;">GRAPHIC DESIGN</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block" aria-current="page" routerLink="/services/detail"> See more  <fa-icon [icon]="iconArrowRight"></fa-icon></a>
                 </div>
             </div>
-            <div class="image-services" data-aos="fade-down-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+            <div class="image-services" data-aos="fade-down-left" data-aos-duration="2000" data-aos-anchor-placement="top-center">
                 <img src="../../../../assets/img/augmented-reality.jpg" class="rounded float-start"/>
             </div>
         </div>
         <div class="body-services d-flex flex-row justify-content-center mb-5">
-            <div class="image-services" data-aos="fade-down-right" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
                 <img src="../../../../assets/img/thumbnail.jpeg" class="rounded float-start"/>
             </div>
     
             <div class="d-flex flex-row align-items-center mx-3">
                 <div class="flex-row align-items-center">
-                    <h1 class="title-outline" style="color: #4162ac;">DIGITAL MARKETING</h1>
-                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
-                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                    <h1 style="color: #4162ac;">DIGITAL MARKETING</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block" aria-current="page" routerLink="/services/detail"> See more  <fa-icon [icon]="iconArrowRight"></fa-icon></a>
                 </div>
             </div>
         </div>
         <div class="body-services d-flex flex-row justify-content-center mb-5">
             <div class="d-flex flex-row align-items-center mx-3">
                 <div class="flex-row align-items-center">
-                    <h1 class="title-outline" style="color: #4162ac;">WEB APPLICATION</h1>
-                    <p class="text-description">Secangkir Teknologi adalah komunitas pelajar, guna membantu dan memberikan pembelajaran terbaik bagi para pelajar yang ingin mendapatkan pelajaran tambahan.</p>
-                    <p class="text-description">Berawal dari keinginan memanfaatkan waktu luang untuk hal-hal yang bermakna, para pendiri membangun Secangkir Ilmu. Tujuan utama dari komunitas ini adalah memberikan pembelajaran tambahan untuk mengembangkan minat dan bakat.</p>
+                    <h1 style="color: #4162ac;">WEB APPLICATION</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block" aria-current="page" routerLink="/services/detail"> See more  <fa-icon [icon]="iconArrowRight"></fa-icon></a>
                 </div>
             </div>
-            <div class="image-services" data-aos="fade-down-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+            <div class="image-services" data-aos="fade-down-left" data-aos-duration="2000" data-aos-anchor-placement="top-center">
                 <img src="../../../../assets/img/augmented-reality.jpg" class="rounded float-start"/>
             </div>
         </div>
@@ -81,7 +107,7 @@
 <section class="section-about" id="about-us">
     <img src="../../../../assets/img/thumbnail.jpeg" class="card-img img-fluid">
     <div class="card text-white">
-        <div class="content-about d-flex flex-column align-items-center justify-content-md-center" data-aos="fade-up" data-aos-duration="3000">
+        <div class="content-about d-flex flex-column align-items-center justify-content-md-center" data-aos="fade-up" data-aos-duration="2000">
             <h3 class="title-about" style="font-weight: bold;">About Us</h3>
             <p class="desc-about">
                 Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.

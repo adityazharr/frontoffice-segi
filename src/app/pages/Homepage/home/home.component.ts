@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import * as AOS from 'aos';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
@@ -24,8 +25,8 @@ export class HomeComponent implements OnInit {
   apiData: any;
   limit: number = 50;
   customOptions: OwlOptions = {
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     dots: false,
     autoHeight: true,
     autoWidth: true,
@@ -47,16 +48,9 @@ export class HomeComponent implements OnInit {
         albumId:  1,
         id: 1,
         title: "First Slide",
-        url: "https://3.bp.blogspot.com/-yt9kE769_18/XARByxBYXPI/AAAAAAAAB9M/92AofoXP9ZsR5-ofu71XCjGltl-uFHuwgCHMYCw/s1600/polar-lights-wallpaper-hd-desktop-wallpapers-4k-hd-wallpaper.jpg",
-        thumbnailUrl: "https://3.bp.blogspot.com/-yt9kE769_18/XARByxBYXPI/AAAAAAAAB9M/92AofoXP9ZsR5-ofu71XCjGltl-uFHuwgCHMYCw/s1600/polar-lights-wallpaper-hd-desktop-wallpapers-4k-hd-wallpaper.jpg"
-       },
-       {
-        albumId: 2,
-        id: 2,
-        title: "Second Slide",
-        url: "https://images.unsplash.com/photo-1504280539878-538b933c05b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80",
-        thumbnailUrl: "https://images.unsplash.com/photo-1504280539878-538b933c05b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80"
-      }
+        url: "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg",
+        thumbnailUrl: "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg"
+       }
     ]
 
       
@@ -66,6 +60,7 @@ export class HomeComponent implements OnInit {
     AOS.init();
   }
 
+  iconArrowRight = faArrowCircleRight;
 
   
 }
