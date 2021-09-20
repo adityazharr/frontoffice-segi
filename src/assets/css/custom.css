@@ -333,13 +333,21 @@ body {
     width: 100%;
     /* border-top : 1px solid #4687CE; */
 }
-
-.link-footer {
-    margin-bottom: 3rem;
+.footer-link{
+	list-style: none;
+	padding-left: none;
 }
-
+.footer-link li a{
+	text-decoration: none;
+	color: #fff;
+}
 .icon-footer {
-    text-align: left;
+    display: block;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 .icon {
     font-size: 25px;
