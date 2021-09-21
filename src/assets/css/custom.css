@@ -348,6 +348,15 @@ body {
     margin-right: 15px;
     margin-top: 10px;
 }
+.bg-footer {
+    background-color: #3f61ab;
+    opacity: 0.9;
+}
+.img-footer { 
+    background-image: url(../img/new_asset/top-char.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
 .icon {
     font-size: 25px;
     background-color: #4687CE;
