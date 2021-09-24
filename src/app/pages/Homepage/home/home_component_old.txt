@@ -1,0 +1,305 @@
+<section class="section-slideshow pb-5" id="slideshow">
+    <div class="slideshow-st container">
+        <div class="slideshow-st-content d-flex flex-row align-items-center justify-content-between">
+            <div class="slideshow-st-content align-items-start justify-content-center">
+                <div class="title-slideshow-st" data-aos="fade-up" data-aos-duration="1000">
+                    <label class="text-blue">SECANGKIR TEKNOLOGI</label>
+                </div>
+                <div class="description-slideshow-st" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <p class="text-blue">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <button class="btn btn-primary btn-block px-5"> Register Now </button>
+                </div>
+            </div>
+            <img src="../../../../assets/img/new_asset/top-char.png" class="thumbnail-slideshow-img"/>
+            <!-- <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of apiData">
+                    <ng-template class="slide" carouselSlide [id]="slide.id">
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o> -->
+        </div>
+    </div>
+</section>
+<div class="wave-content"></div>
+
+<section class="section-services py-5 container" id="service">
+    <div class="title-services text-right" data-aos="fade-up" data-aos-duration="2000">
+        <h2 style="color: '#2B5278'">Our Services</h2>
+        <h2 class="About-Big">Lorem ipsum dolor sit amet, consectur</h2>
+    </div>
+    <div class="row">
+        <!-- <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/service/web-application.svg" class="rounded float-start"/>
+            </div>
+    
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 style="color: #4162ac;">WEB APPLICATION</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block px-5" aria-current="page" routerLink="/services/detail"> See more </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 style="color: #4162ac;">MANAGE SOCIAL MEDIA</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block px-5" aria-current="page" routerLink="/services/detail"> See more </a>
+                </div>
+            </div>
+            <div class="image-services" data-aos="fade-down-left" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/service/manage-social-media.png" class="rounded float-start"/>
+            </div>
+        </div>
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/service/video-editing.svg" class="rounded float-start"/>
+            </div>
+    
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 style="color: #4162ac;">VIDEO EDITING</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block px-5" aria-current="page" routerLink="/services/detail"> See more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-about" id="about-us">
+    <div class="d-flex flex-row align-items-md-start justify-content-between">
+        <img src="../../../../assets/img/new_asset/top-center.png" class="img-fluid" style="width: 800px;">
+        <div class="layertwo-about">
+            <img src="../../../../assets/img/new_asset/about.png" class="img-fluid w-100">            
+            <p class="desc-about mt-5" data-aos="fade-up" data-aos-duration="3000">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="title-box text-center">
+    <h3 class="title">Our Works</h3>
+</div>
+<section class="section-work container py-5" id="work">
+    <div class="row" style="margin-top: 140px; margin-bottom: 140px;">
+        <div class="col-md-6">
+            <h1 class="title-page text-blue">Our <br> Work</h1>
+            <span class="text-blue"><b>In addition to media types, there are also media features. Media features provide more specific details to media queries In addition to media types, there are also media features. Media features provide more specific details to media queries In addition to media types, there are also media features. Media features provide more specific details to media queries</b></span>
+            <!-- <img src="../../../../assets/img/new_asset/our-work.png" class="img-ourWork" alt=""> -->
+        </div>
+        <div class="col-md"></div>
+        <div class="col-md-4">
+            
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../../../assets/img/new_asset/slide1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../../../assets/img/new_asset/slide1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../../../assets/img/new_asset/slide1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+    </div>
+    <!-- <div class="title-box text-center">
+        <h3 class="title">Our Works</h3>
+    </div>
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="3000">
+        <swiper
+        [effect]="'coverflow'"
+        [grabCursor]="true"
+        [centeredSlides]="true"
+        [coverflowEffect]="coverflowEffect"
+        [loop]="true"
+        class="mySwiper"
+        >
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-1.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-2.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-3.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-5.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-6.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-7.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-8.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-9.jpg" class="img-swiper" /></ng-template>
+        </swiper>
+    </div> -->
+</section>
+
+<section class="section-teams d-flex flex-column align-items-center justify-content-md-center" id='teams'>
+    <div class="intro-teams">
+        <h3 class="title" data-aos="fade-up" data-aos-duration="3000"> Our Teams </h3>
+    </div>
+    <div class="teams-detail text-center align-items-center">
+        <div class="d-flex">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/adrian.png" class="img-team"/>
+                <h3 class="name-team">Adrian Milano</h3>
+                <span>Penanggung Jawab</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/shanti.png" class="img-team"/>
+                    <h3 class="name-team">Shanti Annisya. R</h3>
+                <span>PSDM & Controlling</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/wisnu.png" class="img-team"/>
+                <h3 class="name-team">Wisnu Aldy Padma .K</h3>
+                <span>Desain Pembelajaran</span>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/mila.png" class="img-team"/>
+                <h3 class="name-team">Nur Charisa</h3>
+                <span>Administrasi</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/tata.png" class="img-team"/>
+                <h3 class="name-team">Regita Syahyani</h3>
+                <span>Desain Grafis</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/cile.png" class="img-team"/>
+                <h3 class="name-team">Hasna Kamila</h3>
+                <span>Program Dan Acara</span>
+            </div>
+        </div>
+    </div>
+</section>
