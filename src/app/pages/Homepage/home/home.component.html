@@ -10,8 +10,8 @@
                                     <h2>SECANGKIR TEKNOLOGI</h2>
                                 </div>
                                 <div class="col-lg-12">
-                                    <div class="main-green-button scroll-to-section">
-                                        <a href="#contact">Register Now</a>
+                                    <div class="main-blue-button scroll-to-section">
+                                        <a onclick="document.getElementById('popupSignUp').style.display='block'" style="cursor: pointer;">Sign Up Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +370,7 @@
                                 <h2>Fill Out The Form Below To <span>Get</span> In <em>Touch</em> With Us</h2>
                             </div>
                         </div>
-                        <div class="col-lg-9">
+                        <div class="col-lg-12">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <fieldset>
@@ -404,38 +404,74 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button ">Send Message
+                                        <button type="submit" id="form-submit" class="main-blue-button ">Send Message
                                             Now</button>
                                     </fieldset>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="contact-info">
-                                <ul>
-                                    <li>
-                                        <div class="icon">
-                                            <img src="assets/images/contact-icon-01.png" alt="email icon">
-                                        </div>
-                                        <a href="#">info@company.com</a>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <img src="assets/images/contact-icon-02.png" alt="phone">
-                                        </div>
-                                        <a href="#">+001-002-0034</a>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <img src="assets/images/contact-icon-03.png" alt="location">
-                                        </div>
-                                        <a href="#">26th Street, Digital Villa</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popupSignUp" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="top: 20%; border-radius: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                    <form id="contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="section-heading">
+                                    <h2><em>SIGN UP</em></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <fieldset>
+                                            <input type="name" name="name" id="name" placeholder="Name" autocomplete="on"
+                                                required>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <fieldset>
+                                            <input type="surname" name="surname" id="surname" placeholder="Surname"
+                                                autocomplete="on" required>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                                placeholder="Your Email" required>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <input type="password" name="password" id="password" placeholder="Password"
+                                                autocomplete="on" required>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-blue-button">Sign
+                                                Up</button>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <fieldset>
+                                            <button
+                                                onclick="document.getElementById('popupSignUp').style.display='none'"
+                                                type="button" class="main-button">Cancel</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

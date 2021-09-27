@@ -200,7 +200,7 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #33ccc5;
+  color: #4771cb;
 }
 
 .section-heading h2 span {
@@ -641,7 +641,7 @@ header
     width: 100%;
   }
   .header-area {
-    background-color: #33ccc5;
+    background-color: #fff;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
