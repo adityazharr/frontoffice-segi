@@ -1,0 +1,75 @@
+<style>
+    .top-article {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 226px 0px 120px 0px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top-article::after {
+        content: '';
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 212px;
+        height: 653px;
+        z-index: -1;
+    }
+
+    .top-article::before {
+        content: '';
+        background-image: url(../../../assets/img/new_asset/wave-content.png);
+        background-size: cover;
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        width: 2000px;
+        height: 797px;
+        z-index: -1;
+    }
+
+    .top-article .container h1 {
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 0;
+        color: #4771cb;
+        text-transform: uppercase;
+    }
+
+    .contact-title {
+        font-size: 80px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #4771cb;
+    }
+</style>
+<div class="top-article wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container text-center">
+        <h1 class="contact-title">ARTICLE</h1>
+        <p>Find something interest</p>
+    </div>
+    <div class="container">
+        <div style="padding-bottom: 175px;"></div>
+        <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "freeScroll": true, "pageDots": false}'>
+            <div class="carousel-cell">
+                <a href="javascript:void(0)">
+                    <div class="card" style="width: 300px; height: 250px; margin-left: 10px">
+                        <div class="card-body" style="padding: 0;">
+                            <div class="img-box">
+                                <img src="" class="img-blog-content img-fluid" style="height : 15vh">
+                            </div>
+                            <div class="d-flex flex-column justify-content-between p-2">
+                                <b style="color: #FFA500">...</b>
+                                <font size="1" color="black"></font>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> -->
+    </div>
+</div>

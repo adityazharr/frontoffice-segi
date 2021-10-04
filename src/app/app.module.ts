@@ -13,12 +13,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SwiperModule } from 'swiper/angular';
 import { FaqComponent } from './pages/faq/faq.component';
 import { ServicesComponent } from './pages/services/services.component';
+import { ArticleComponent } from './pages/article/article.component';
 
 const routes = [
   {path: '', component: HomeComponent},
   {path: 'faq', component: FaqComponent},
-  {path: 'article', component: HomeComponent},
   {path: 'services/detail', component: ServicesComponent},
+  {path: 'article', component: ArticleComponent}
 ]
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ const routes = [
     HomeComponent,
     FooterComponent,
     FaqComponent,
-    ServicesComponent
+    ServicesComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
