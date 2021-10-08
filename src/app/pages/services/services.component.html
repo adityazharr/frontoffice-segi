@@ -1,127 +1,220 @@
-<section class="section-services">
-    <div class="img-background">
-        <img src="https://wallpaperaccess.com/full/84268.jpg"/>
+<style>
+    .top-services {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 126px 0px 120px 0px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top-services::after {
+        content: '';
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 212px;
+        height: 653px;
+        z-index: -1;
+    }
+
+    .top-services::before {
+        content: '';
+        background-image: url(../../../assets/img/new_asset/wave-content.png);
+        background-size: cover;
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        width: 2000px;
+        height: 797px;
+        z-index: -1;
+    }
+
+    .top-services2 {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 0px 0px 120px 0px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top-services2::after {
+        content: '';
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 212px;
+        height: 653px;
+        z-index: -1;
+    }
+
+    .top-services2::before {
+        content: '';
+        background-image: url(../../../assets/img/new_asset/top-wave.png);
+        background-size: cover;
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        width: 2000px;
+        height: 797px;
+        z-index: -1;
+    }
+
+    .services-title {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    .icon-service {
+        font-size: 40px;
+        background-color: #4771cb;
+        color: white;
+        padding: 30px;
+        border-radius: 100%;
+        margin-bottom: 10px;
+    }
+
+    .service-content {
+        font-weight: 700;
+        font-size: 15pt;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+</style>
+<div id="web-application" class="top-services section features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container text-center mb-5">
+        <h1 class="services-title">The most complete <span style="color: #4771cb;">service</span> for your <span
+                style="color: #33ccc5;">business</span></h1>
     </div>
-    <div class="services-title">
-        <h3 class="text-blue">SERVICES</h3>
-        <h5>We Got Some Package For You !</h5>
-    </div>
-    <div class="container text-center my-5">
-        <div class="row">
-            <div class="col-md-4 mb-5">
-                <div class="card card-package" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                    <div class="card-header header-services text-center">
-                        <img src="../../../../assets/img/thumbnail.jpeg" />
+    <div class="container">
+        <div class="features-content">
+            <div class="text-center">
+                <h2 style="padding-top: 20px; padding-bottom: 20px;">Web Application</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-desktop icon-service"></i>
+                                <p class="service-content">Website Development and Updating</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="services-description">
-                            <h5 class="content"> Package A </h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-code icon-service"></i>
+                                <p class="service-content">Creation and operation of web media</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-database icon-service"></i>
+                                <p class="service-content">Serving servers for applications (if needed)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-briefcase icon-service"></i>
+                                <p class="service-content">Application web maintenance</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="card card-package" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                    <div class="card-header header-services text-center">
-                        <img src="../../../../assets/img/augmented-reality.jpg" width="100%"/>
-                    </div>
-                    <div class="card-body">
-                        <div class="services-description">
-                            <h5 class="content"> Package B </h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-history icon-service"></i>
+                                <p class="service-content">Application web revision system</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="card card-package" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                    <div class="card-header header-services text-center">
-                        <img src="../../../../assets/img/thumbnail.jpeg" width="100%"/>
-                    </div>
-                    <div class="card-body">
-                        <div class="services-description">
-                            <h5 class="content"> Package C </h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-shield icon-service"></i>
+                                <p class="service-content">Website Security</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="card card-package" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                    <div class="card-header header-services text-center">
-                        <img src="../../../../assets/img/thumbnail.jpeg" width="100%"/>
-                    </div>
-                    <div class="card-body">
-                        <div class="services-description">
-                            <h5 class="content"> Package D </h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="card card-package" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                    <div class="card-header header-services text-center">
-                        <img src="../../../../assets/img/thumbnail.jpeg" width="100%"/>
-                    </div>
-                    <div class="card-body">
-                        <div class="services-description">
-                            <h5 class="content"> Package E </h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="card card-package" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                    <div class="card-header header-services text-center">
-                        <img src="../../../../assets/img/thumbnail.jpeg" width="100%"/>
-                    </div>
-                    <div class="card-body">
-                        <div class="services-description">
-                            <h5 class="content"> Package F </h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-search-plus icon-service"></i>
+                                <p class="service-content">Search Engine Optimization</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+<!-- <div id="manage-sosmed" class="top-services2 section features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container mt-5">
+        <div class="features-content">
+            <div class="text-center">
+                <h2 style="padding-top: 20px; padding-bottom: 20px;">Manage Social Media</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-pallete icon-service"></i>
+                                <p class="service-content">Content Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-lightbulb icon-service"></i>
+                                <p class="service-content">Content Idea</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-clipboard icon-service"></i>
+                                <p class="service-content">Copywriting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-chalboard-teacher icon-service"></i>
+                                <p class="service-content">Admin Posting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-history icon-service"></i>
+                                <p class="service-content">Design Revision</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

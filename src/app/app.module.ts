@@ -14,12 +14,14 @@ import { SwiperModule } from 'swiper/angular';
 import { FaqComponent } from './pages/faq/faq.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ArticleComponent } from './pages/article/article.component';
+import { DetailArticleComponent } from './pages/article/detail-article.component';
 
 const routes = [
   {path: '', component: HomeComponent},
   {path: 'faq', component: FaqComponent},
   {path: 'services/detail', component: ServicesComponent},
-  {path: 'article', component: ArticleComponent}
+  {path: 'article', component: ArticleComponent},
+  {path: 'article/:slug', component: DetailArticleComponent}
 ]
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ const routes = [
     FooterComponent,
     FaqComponent,
     ServicesComponent,
-    ArticleComponent
+    ArticleComponent,
+    DetailArticleComponent
   ],
   imports: [
     BrowserModule,

@@ -37,39 +37,130 @@
         letter-spacing: 1px;
         font-weight: 700;
         margin: 0;
-        color: #4771cb;
         text-transform: uppercase;
     }
 
     .contact-title {
-        font-size: 80px;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #4771cb;
+        font-size: 50px;
+    }
+
+    .img-article {
+        border-radius: 10px;
+        height: 200px;
+    }
+
+    .tag {
+        margin-left: 20px;
+    }
+
+    .tag-label {
+        background-color: #4b8ce6;
+        font-size: 12pt;
+        color: white;
+        padding: .25rem .5rem .25rem .5rem;
+        border-radius: .25rem;
+        margin-right: .30rem;
+    }
+
+    .title-article {
+        font-weight: 600;
+        margin-left: 20px;
+        font-size: 15pt;
+        --tw-text-opacity: 1;
+        color: rgba(14, 31, 80, var(--tw-text-opacity))
+    }
+
+    .footer-article {
+        margin-left: 20px;
+    }
+
+    .form-search {
+        width: 100%;
+        border-radius: .75rem;
+        border-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgba(207, 213, 228, 1);
+        border-color: rgba(207, 213, 228, var(--tw-border-opacity));
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .li {
+        font-size: 13pt;
+    }
+
+    a.article {
+        text-decoration: none;
+        color: inherit;
     }
 </style>
-<div class="top-article wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container text-center">
-        <h1 class="contact-title">ARTICLE</h1>
-        <p>Find something interest</p>
+<div class="top-article features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container text-center mb-5">
+        <h1 class="contact-title">Find latest <span style="color: #4771cb;">news</span> around the <span
+                style="color: #33ccc5;">world</span></h1>
     </div>
     <div class="container">
-        <div style="padding-bottom: 175px;"></div>
-        <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "freeScroll": true, "pageDots": false}'>
+        <div class="main-carousel">
             <div class="carousel-cell">
-                <a href="javascript:void(0)">
-                    <div class="card" style="width: 300px; height: 250px; margin-left: 10px">
-                        <div class="card-body" style="padding: 0;">
-                            <div class="img-box">
-                                <img src="" class="img-blog-content img-fluid" style="height : 15vh">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6" *ngFor="let article of articles">
+                                <a class="article">
+                                    <div class="features-content">
+                                        <div class="features-item">
+                                            <img src="../../../assets/img/{{article.gambar}}" class="img-article mb-4"
+                                                alt="">
+                                            <div class="tag mb-2">
+                                                <span class="tag-label">{{article.tag.split(',')[0]}}</span>
+                                                <span class="tag-label">{{article.tag.split(',')[1]}}</span>
+                                                <span class="tag-label">{{article.tag.split(',')[2]}}</span>
+                                            </div>
+                                            <h3 class="mt-3 title-article">{{article.title.substring(0, 30)}}...</h3>
+                                            <div class="footer-article">
+                                                <small>Mon, 13 Sep 2021 11:21 AM | 24 hari lalu</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="d-flex flex-column justify-content-between p-2">
-                                <b style="color: #FFA500">...</b>
-                                <font size="1" color="black"></font>
+                            <!-- <div class="col-md-6">
+                                <div class="features-content">
+                                    <div class="features-item">
+                                        <img src="../../../assets/img/thumbnail.jpeg" class="img-article mb-4" alt="">
+                                        <span class="tag-label">Javascript</span>
+                                        <span class="tag-label">PHP</span>
+                                        <span class="tag-label">Laravel</span>
+                                        <h3 class="mt-3 title-article">Mengenal Laravel dan Java...</h3>
+                                        <div class="footer-article">
+                                            <small>Mon, 13 Sep 2021 11:21 AM | 24 hari lalu</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="search" autocomplete="off" class="form-search" placeholder="Search...">
+                        <div class="features-tag mt-5">
+                            <div class="features-item-tag">
+                                <ul class="w3-ul w3-hoverable">
+                                    <li class="li">Teknologi</li>
+                                    <li class="li">PHP</li>
+                                    <li class="li">Laravel</li>
+                                    <li class="li">Javascript</li>
+                                    <li class="li">Website</li>
+                                    <li class="li">Kekinian</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </div>

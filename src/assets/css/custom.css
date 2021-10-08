@@ -117,11 +117,7 @@ body {
     /* background-color: white; */
 }
 .title-services {
-    margin-bottom: 3rem;
-}
-.title-services .About-Big{
-	font-size: 3rem;
-	color :#2B5278;
+    font-size: 14pt;
 }
 .body-services img{
 	/* position: absolute;
@@ -273,7 +269,6 @@ body {
 
 /* END FAQ */
 
-
 /* SERVICES DETAIL */
 .section-services .img-background img{
     width: 100vw;
@@ -307,18 +302,7 @@ body {
     height: 100%;
 }
 .header-services {
-    height: 100%;
-}
-.header-services img{
-    transition: .5s;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.header-services:hover img {
-    transform: scale(1.1);
-    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    color: #33ccc5;
 }
 
 .services-description > ul {
