@@ -942,7 +942,7 @@ Features Style
   position: relative;
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 200px rgba(0,0,0,0.1);
 }
 
 .features-tag {
@@ -969,7 +969,7 @@ Features Style
 .features-item {
   text-align: left;
   padding-bottom: 40px;
-  border-radius: 50px;
+  border-radius: 20px;
   background: rgb(255,255,255);
   background: linear-gradient(105deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
   transition: background-color .5s;

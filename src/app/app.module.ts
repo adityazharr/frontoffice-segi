@@ -15,6 +15,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ArticleComponent } from './pages/article/article.component';
 import { DetailArticleComponent } from './pages/article/detail-article.component';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 const routes = [
   {path: '', component: HomeComponent},
@@ -44,7 +45,7 @@ const routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

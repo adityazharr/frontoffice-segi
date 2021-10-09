@@ -3,6 +3,7 @@ import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import * as AOS from 'aos';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import { Meta } from '@angular/platform-browser';
 
 export interface PhotosApi {
   albumId?: number;
@@ -42,7 +43,13 @@ export class HomeComponent implements OnInit {
     // slideShadows : true
   }
 
-  constructor() { 
+  constructor(private meta: Meta) { 
+
+      this.meta.addTags([
+        {name: 'title', content: 'Secangkir Teknologi'},
+        {name: 'author', content: 'Secangkir Teknologi'},
+        {name: 'keywords', content: 'secangkir teknologi, freelancer, jasa buat website, jasa video editing'},
+      ])
       this.apiData = [
         {
         albumId:  1,

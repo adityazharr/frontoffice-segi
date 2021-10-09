@@ -33,7 +33,7 @@
         z-index: -1;
     }
 
-    .top-services2 {
+    .top-manage-sosmed {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -42,7 +42,7 @@
         overflow: hidden;
     }
 
-    .top-services2::after {
+    .top-manage-sosmed::after {
         content: '';
         opacity: 0.4;
         background-repeat: no-repeat;
@@ -54,7 +54,7 @@
         z-index: -1;
     }
 
-    .top-services2::before {
+    .top-manage-sosmed::before {
         content: '';
         background-image: url(../../../assets/img/new_asset/top-wave.png);
         background-size: cover;
@@ -67,6 +67,40 @@
         z-index: -1;
     }
 
+    .top-video-editing {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 0px 0px 120px 0px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top-video-editing::after {
+        content: '';
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 212px;
+        height: 653px;
+        z-index: -1;
+    }
+
+    .top-video-editing::before {
+        content: '';
+        background-image: url(../../../assets/img/new_asset/top-center.png);
+        background-size: cover;
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        width: 1000px;
+        height: 797px;
+        z-index: -1;
+    }
+
     .services-title {
         font-size: 50px;
         text-transform: uppercase;
@@ -74,18 +108,24 @@
 
     .icon-service {
         font-size: 40px;
-        background-color: #4771cb;
-        color: white;
+        color: #4771cb;
+        /* color: white; */
         padding: 30px;
-        border-radius: 100%;
-        margin-bottom: 10px;
+        /* border-radius: 100%;
+        margin-bottom: 10px; */
     }
 
     .service-content {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 15pt;
         margin-left: 50px;
         margin-right: 50px;
+    }
+    
+    .services-header {
+        padding-top: 20px;
+        font-size: 20pt;
+        font-weight: 600;
     }
 </style>
 <div id="web-application" class="top-services section features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -96,7 +136,11 @@
     <div class="container">
         <div class="features-content">
             <div class="text-center">
-                <h2 style="padding-top: 20px; padding-bottom: 20px;">Web Application</h2>
+                <h2 class="services-header">Web Application</h2>
+                <p class="text-center" style="padding-bottom: 10px; font-size: 12pt; margin-left: 200px; margin-right: 200px;">
+                    Websites are a great place for marketing. Because it can help you get more leads, increase sales,
+                    enhance your brand and improve customer service.
+                </p>
             </div>
             <div class="container">
                 <div class="row">
@@ -163,18 +207,25 @@
         </div>
     </div>
 </div>
-<!-- <div id="manage-sosmed" class="top-services2 section features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+<div id="manage-sosmed" class="top-manage-sosmed section features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container mt-5">
         <div class="features-content">
             <div class="text-center">
-                <h2 style="padding-top: 20px; padding-bottom: 20px;">Manage Social Media</h2>
+                <h2 class="services-header">Manage Social Media</h2>
+                <p class="text-center" style="padding-bottom: 10px; font-size: 12pt; margin-left: 200px; margin-right: 200px;">
+                    Want to increase your sales? We have the solution!
+                    Social media management can improve the brand image
+                    of the products you sell. Because with content marketing
+                    through social media is the key to reaching your target
+                    and the basis of a successful digital marketing strategy.
+                </p>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="features-item">
                             <div class="text-center">
-                                <i class="fa fa-pallete icon-service"></i>
+                                <i class="fa fa-palette icon-service"></i>
                                 <p class="service-content">Content Design</p>
                             </div>
                         </div>
@@ -198,7 +249,7 @@
                     <div class="col-md-3">
                         <div class="features-item">
                             <div class="text-center">
-                                <i class="fa fa-chalboard-teacher icon-service"></i>
+                                <i class="fa fa-chalkboard-teacher icon-service"></i>
                                 <p class="service-content">Admin Posting</p>
                             </div>
                         </div>
@@ -217,4 +268,71 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
+<div id="video-editing" class="top-video-editing section features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container mt-5">
+        <div class="features-content">
+            <div class="text-center">
+                <h2 class="services-header">Video Editing</h2>
+                <p class="text-center" style="padding-bottom: 10px; font-size: 12pt; margin-left: 200px; margin-right: 200px;">
+                    Most people prefer visual content. Using marketing campaigns through visual content such as videos
+                    can impact the reach, engagement and sales of your business.
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-file-medical-alt icon-service"></i>
+                                <p class="service-content">Product Demo / Instructional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-boxes icon-service"></i>
+                                <p class="service-content">Product Review / Highlight</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-file-video icon-service"></i>
+                                <p class="service-content">Documentation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-star-half-alt icon-service"></i>
+                                <p class="service-content">Testimonials</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-laptop-house icon-service"></i>
+                                <p class="service-content">Real Estate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="features-item">
+                            <div class="text-center">
+                                <i class="fa fa-microphone-alt icon-service"></i>
+                                <p class="service-content">Short Podcast (5 - 10 mins)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
