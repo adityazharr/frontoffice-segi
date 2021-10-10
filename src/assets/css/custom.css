@@ -219,12 +219,12 @@ body {
 }
 .img-team{
     width: 50%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     transition: 0.5s;
 }
 
 .img-team:hover {
-    transform : scale(1.1);
+    /* transform : scale(1.1); */
 }
 /* END SECTION 5 */
 

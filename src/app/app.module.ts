@@ -15,7 +15,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ArticleComponent } from './pages/article/article.component';
 import { DetailArticleComponent } from './pages/article/detail-article.component';
-import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 const routes = [
   {path: '', component: HomeComponent},
@@ -42,6 +42,7 @@ const routes = [
     CarouselModule,
     SwiperModule,
     OwlModule,
+    CommonModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes)
   ],

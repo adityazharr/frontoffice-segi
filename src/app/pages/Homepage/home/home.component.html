@@ -22,6 +22,85 @@
         color: #0c0a0a;
         font-weight: 500;
     }
+
+    .our-team {
+        padding: 20px 15px 30px;
+        /* background: #fff; */
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .our-team .pic {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        /* background: #fff; */
+        padding: 10px;
+        margin-bottom: 25px;
+        transition: all 0.1s ease 0s;
+    }
+
+    .our-team:hover .pic {
+        border: 5px solid #4771cb;
+        border-radius: 50%;
+    }
+
+    .pic img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .our-team .title {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2e282a;
+        text-transform: uppercase;
+        margin: 0 0 7px 0;
+    }
+
+    .our-team .post {
+        display: block;
+        font-size: 15px;
+        color: #4771cb;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+
+    .our-team .social {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .our-team .social li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .our-team .social li a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        font-size: 15px;
+        color: #4771cb;
+        border: 1px solid #4771cb;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .social li a {
+        background: #4771cb;
+        color: #fff;
+    }
+
+    @media only screen and (max-width: 990px) {
+        .our-team {
+            margin-bottom: 30px;
+        }
+    }
 </style>
 <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
@@ -122,6 +201,23 @@
                 <div class="main-green-button"><a href="/services/detail#video-editing">See more</a></div>
             </div>
         </div>
+        <!-- <div class="row">
+            <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="about-item">
+                    <h2 class="header-services">Graphic Design</h2>
+                </div>
+                <p class="title-services">
+                    Most people prefer visual content. Using marketing campaigns through visual content such as videos
+                    can impact the reach, engagement and sales of your business.
+                </p>
+                <div class="main-green-button"><a href="/services/detail#video-editing">See more</a></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <img src="../../../../assets/img/layanan-design-graphic.png" alt="">
+                </div>
+            </div>
+        </div> -->
     </div>
 </div>
 <div id="about-us" class="about-us section mt-5">
@@ -176,9 +272,11 @@
                                 </div>
                                 <div class="works-description">
                                     <span>
-                                        <span style="color: #4771cb;">MoGawe Bisnis</span> Lorem Ipsum dolor sit amet
-                                        Lorem Ipsum dolor sit ametLorem Ipsum dolor sit ametLorem Ipsum dolor sit amet
-                                        Lorem Ipsum dolor sit ametLorem Ipsum dolor sit ametLorem Ipsum dolor sit amet
+                                        <span style="color: #4771cb;">MoGawe</span> is an Android application that can
+                                        give you
+                                        income starting from IDR 200 thousand per day just by doing simple tasks
+                                        (gawean). We modify mogawe website
+                                        and mobile application to fixing bugs & error and redesign some design layouts
                                     </span>
                                 </div>
                             </div>
@@ -190,11 +288,13 @@
                                 <!-- <img src="../../../../assets/img/works/porto-evote-unas.png" style="display: block;" alt=""> -->
                                 <img src="../../../../assets/img/works/unas-logo.png" class="img-works" alt="">
                                 <div class="works-title text-center">
-                                    <a href="https://isrcode.postel.go.id/dazumba/unas-evote-fo" target="_blank">UNAS E-Vote</a>
+                                    <a href="https://isrcode.postel.go.id/dazumba/unas-evote-fo" target="_blank">UNAS
+                                        E-Vote</a>
                                 </div>
                                 <div class="works-description">
                                     <span>
-                                        <span style="color: #4771cb;">UNAS E-Vote</span> is an application that is used to support the selection of elections
+                                        <span style="color: #4771cb;">UNAS E-Vote</span> is an application that is used
+                                        to support the selection of elections
                                         at the
                                         National University,
                                         such as the election of the Chairman of the Association, the Chairman of the
@@ -221,112 +321,115 @@
         </div>
     </div>
     <div class="container text-center">
-        <div class="row">
-            <section id='teams'>
-                <div class="teams-detail text-center align-items-center">
-                    <div class="d-flex">
-                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/adrian.png"
-                                class="img-team" />
-                            <h3 class="name-team">Adrian Milano</h3>
-                            <span>Person Responsible</span>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/shanti.png"
-                                class="img-team" />
-                            <h3 class="name-team">Shanti Annisya. R</h3>
-                            <span>Human Resource Development & Controlling</span>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/wisnu.png"
-                                class="img-team" />
-                            <h3 class="name-team">Wisnu Aldy Padma .K</h3>
-                            <span>Learning Design</span>
-                        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="https://i.ibb.co/kDynW1z/Dwiky-removebg-preview.png">
                     </div>
-                    <div class="d-flex">
-                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/mila.png"
-                                class="img-team" />
-                            <h3 class="name-team">Nur Charisa</h3>
-                            <span>Administration</span>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
-                            <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/tata.png"
-                                class="img-team" />
-                            <h3 class="name-team">Regita Syahyani</h3>
-                            <span>Graphic Design</span>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
-                            <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/cile.png"
-                                class="img-team" />
-                            <h3 class="name-team">Hasna Kamila</h3>
-                            <span>Program And Events</span>
-                        </div>
-                    </div>
+                    <h3 class="title">Dwiky Aliansyah</h3>
+                    <span class="post">Direction</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
                 </div>
-            </section>
-        </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/aulia.png">
+                    </div>
+                    <h3 class="title">Aulia Aryaseta</h3>
+                    <span class="post">Head Of Operations</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/wisnu.png">
+                    </div>
+                    <h3 class="title">Wisnu Aldy Padma K.</h3>
+                    <span class="post">Head Of Learning Management</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/kelvin.png">
+                    </div>
+                    <h3 class="title">Kelvin Febrian Go</h3>
+                    <span class="post">Head Of Technology</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/shanti.png">
+                    </div>
+                    <h3 class="title">Shanti Annisya Rachma</h3>
+                    <span class="post">Head Of Creative</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/mila.png">
+                    </div>
+                    <h3 class="title">Hasna Kamila</h3>
+                    <span class="post">Finance</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/tata.png">
+                    </div>
+                    <h3 class="title">Regita Syahyani</h3>
+                    <span class="post">Secretary</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
     </div>
 </div>
-<!-- <div id="contact" class="contact-us section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                <form id="contact" action="" method="post">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3">
-                            <div class="section-heading">
-                                <h6>Contact Us</h6>
-                                <h2>Fill Out The Form Below To <span>Get</span> In <em>Touch</em> With Us</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="on"
-                                            required>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input type="surname" name="surname" id="surname" placeholder="Surname"
-                                            autocomplete="on" required>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                            placeholder="Your Email" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input type="subject" name="subject" id="subject" placeholder="Subject"
-                                            autocomplete="on">
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <textarea name="message" type="text" class="form-control" id="message"
-                                            placeholder="Message" required=""></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="main-blue-button ">Send Message
-                                            Now</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div id="popupSignUp" class="w3-modal">
     <div class="w3-modal-content w3-animate-zoom" style="top: 20%; border-radius: 20px;">
         <div class="container">

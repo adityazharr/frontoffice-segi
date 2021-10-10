@@ -22,46 +22,42 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 })
 
 export class HomeComponent implements OnInit {
-
-  apiData: any;
-  limit: number = 50;
   customOptions: OwlOptions = {
-    loop: false,
-    autoplay: false,
-    dots: false,
-    autoHeight: true,
-    autoWidth: true,
-    navText: ['&#8249', '&#8250;'],
-    items : 1,
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplaySpeed: 1000,
+    autoplayTimeout: 3000,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: false
   }
 
-  coverflowEffect = {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    // slideShadows : true
+  constructor(private meta: Meta) {
+
+    this.meta.addTags([
+      { name: 'title', content: 'Secangkir Teknologi' },
+      { name: 'author', content: 'Secangkir Teknologi' },
+      { name: 'keywords', content: 'secangkir teknologi, freelancer, jasa buat website, jasa video editing' },
+    ])
   }
-
-  constructor(private meta: Meta) { 
-
-      this.meta.addTags([
-        {name: 'title', content: 'Secangkir Teknologi'},
-        {name: 'author', content: 'Secangkir Teknologi'},
-        {name: 'keywords', content: 'secangkir teknologi, freelancer, jasa buat website, jasa video editing'},
-      ])
-      this.apiData = [
-        {
-        albumId:  1,
-        id: 1,
-        title: "First Slide",
-        url: "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg",
-        thumbnailUrl: "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg"
-       }
-    ]
-
-      
-    }
 
   ngOnInit(): void {
     AOS.init();
@@ -69,5 +65,5 @@ export class HomeComponent implements OnInit {
 
   iconArrowRight = faArrowCircleRight;
 
-  
+
 }
