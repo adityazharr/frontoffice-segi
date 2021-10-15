@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href https://teknologi.secangkirilmu.web.id/",
+    "build": "ng build --prod --base-href https://teknologi.secangkirilmu.id/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

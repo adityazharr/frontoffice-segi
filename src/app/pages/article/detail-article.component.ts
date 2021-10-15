@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-detail-article',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailArticleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    var slug = this.route.snapshot.paramMap.get('slug')
+    console.log(slug)
   }
 
 }
