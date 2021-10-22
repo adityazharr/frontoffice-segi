@@ -20,7 +20,7 @@ import { CommonModule, HashLocationStrategy, LocationStrategy, PathLocationStrat
 const routes = [
   {path: '', component: HomeComponent},
   {path: 'faq', component: FaqComponent},
-  {path: 'services/detail', component: ServicesComponent},
+  {path: 'services/:slug', component: ServicesComponent},
   {path: 'article', component: ArticleComponent},
   {path: 'article/:slug', component: DetailArticleComponent}
 ]

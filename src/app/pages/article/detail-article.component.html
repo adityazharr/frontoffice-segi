@@ -1,0 +1,174 @@
+<style>
+    .top-article {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 100px 0px 120px 0px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top-article::after {
+        content: '';
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 212px;
+        height: 653px;
+        z-index: -1;
+    }
+
+    .top-article::before {
+        content: '';
+        background-image: url(../../../assets/img/new_asset/banner-shape-1.png);
+        background-size: cover;
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        width: 2000px;
+        height: 797px;
+        z-index: -1;
+    }
+
+    .top-article .container h1 {
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .contact-title {
+        font-size: 50px;
+    }
+
+    .img-article {
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .tag-label {
+        background-color: #4b8ce6;
+        font-size: 12pt;
+        color: white;
+        padding: .25rem .5rem .25rem .5rem;
+        border-radius: .25rem;
+        margin-right: .30rem;
+    }
+
+    .title-article {
+        font-weight: 600;
+        margin-left: 20px;
+        font-size: 22pt;
+        --tw-text-opacity: 1;
+        color: rgba(14, 31, 80, var(--tw-text-opacity));
+        padding-bottom: 10px;
+    }
+
+    .isi-article {
+        text-align: justify;
+    }
+
+    .footer-article {
+        font-weight: 400;
+    }
+
+    .form-search {
+        width: 100%;
+        border-radius: .75rem;
+        border-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgba(207, 213, 228, 1);
+        border-color: rgba(207, 213, 228, var(--tw-border-opacity));
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .li {
+        font-size: 13pt;
+    }
+
+    a.article {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul.breadcrumb {
+        /* padding: 10px 16px; */
+        list-style: none;
+    }
+
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 15px;
+    }
+
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: ">";
+    }
+
+    ul.breadcrumb li a {
+        color: #4b8ce6;
+        text-decoration: none;
+    }
+
+    ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+</style>
+<div class="top-article features wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container text-center mb-5">
+    </div>
+    <div class="container">
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="breadcrumb">
+                            <li><a href="">Home</a></li>
+                            <li><a href="/article">Articles</a></li>
+                            <li>{{article.title}}</li>
+                        </ul>
+                        <h1 class="title-article">{{article.title}}</h1>
+                        <div class="footer-article mb-3">
+                            <small>{{article.created_at | date:'medium'}} by {{article.created_by}}</small>
+                        </div>
+                        <div class="mb-4">
+                            <span class="tag-label">{{article.tag.split(',')[0]}}</span>
+                            <span class="tag-label">{{article.tag.split(',')[1]}}</span>
+                            <span class="tag-label">{{article.tag.split(',')[2]}}</span>
+                        </div>
+                        <img src="{{article.gambar}}" class="img-article mb-4" alt="">
+                        <div class="isi-article" [innerHtml]="article.isi">
+                            <!-- {{article.isi}} -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="search" autocomplete="off" class="form-search" placeholder="Search...">
+                        <div class="features-tag mt-5">
+                            <div class="features-item-tag">
+                                <ul class="w3-ul w3-hoverable">
+                                    <li class="li">Teknologi</li>
+                                    <li class="li">PHP</li>
+                                    <li class="li">Laravel</li>
+                                    <li class="li">Javascript</li>
+                                    <li class="li">Website</li>
+                                    <li class="li">Kekinian</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

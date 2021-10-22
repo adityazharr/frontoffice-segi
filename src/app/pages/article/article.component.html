@@ -114,7 +114,7 @@
                                 <a class="article" href="/article/{{article.slug}}">
                                     <div class="features-content">
                                         <div class="features-item">
-                                            <img src="../../../assets/img/{{article.gambar}}" class="img-article mb-4"
+                                            <img src="{{article.gambar}}" class="img-article mb-4"
                                                 alt="">
                                             <div class="tag mb-2">
                                                 <span class="tag-label">{{article.tag.split(',')[0]}}</span>
@@ -123,26 +123,12 @@
                                             </div>
                                             <h3 class="mt-3 title-article">{{article.title.substring(0, 30)}}...</h3>
                                             <div class="footer-article">
-                                                <small>Mon, 13 Sep 2021 11:21 AM | 24 hari lalu</small>
+                                                <small>{{article.created_by}} | {{article.created_at | date:'medium'}}</small>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <!-- <div class="col-md-6">
-                                <div class="features-content">
-                                    <div class="features-item">
-                                        <img src="../../../assets/img/thumbnail.jpeg" class="img-article mb-4" alt="">
-                                        <span class="tag-label">Javascript</span>
-                                        <span class="tag-label">PHP</span>
-                                        <span class="tag-label">Laravel</span>
-                                        <h3 class="mt-3 title-article">Mengenal Laravel dan Java...</h3>
-                                        <div class="footer-article">
-                                            <small>Mon, 13 Sep 2021 11:21 AM | 24 hari lalu</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                     <div class="col-md-4">

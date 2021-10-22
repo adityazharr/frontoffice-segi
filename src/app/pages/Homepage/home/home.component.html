@@ -150,74 +150,67 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../../../assets/img/service/web-application.svg" alt="">
+                    <img src="{{services[0].img_service}}" alt="">
                 </div>
             </div>
             <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="about-item">
-                    <h2 class="header-services">Web Application</h2>
+                    <h2 class="header-services">{{services[0].title}}</h2>
                 </div>
                 <p class="title-services">
-                    Websites are a great place for marketing. Because it can help you get more leads, increase sales,
-                    enhance your brand and improve customer service.
+                    {{services[0].description}}
                 </p>
-                <div class="main-green-button"><a href="/services/detail">See more</a></div>
+                <div class="main-green-button"><a href="/services/{{services[0].slug}}">See more</a></div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="about-item">
-                    <h2 class="header-services">Manage Social Media</h2>
+                    <h2 class="header-services">{{services[1].title}}</h2>
                 </div>
                 <p class="title-services">
-                    Want to increase your sales? We have the solution!
-                    Social media management can improve the brand image
-                    of the products you sell. Because with content marketing
-                    through social media is the key to reaching your target
-                    and the basis of a successful digital marketing strategy.
+                    {{services[1].description}}
                 </p>
-                <div class="main-green-button"><a href="/services/detail#manage-sosmed">See more</a></div>
+                <div class="main-green-button"><a href="/services/{{services[1].slug}}">See more</a></div>
             </div>
             <div class="col-lg-6">
                 <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../../../assets/img/service/manage-social-media.png" alt="">
+                    <img src="{{services[1].img_service}}" alt="">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../../../assets/img/service/video-editing.svg" alt="">
+                    <img src="{{services[2].img_service}}" alt="">
                 </div>
             </div>
             <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="about-item">
-                    <h2 class="header-services">Video Editing</h2>
+                    <h2 class="header-services">{{services[2].title}}</h2>
                 </div>
                 <p class="title-services">
-                    Most people prefer visual content. Using marketing campaigns through visual content such as videos
-                    can impact the reach, engagement and sales of your business.
+                    {{services[2].description}}
                 </p>
-                <div class="main-green-button"><a href="/services/detail#video-editing">See more</a></div>
+                <div class="main-green-button"><a href="/services/{{services[2].slug}}">See more</a></div>
             </div>
         </div>
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="about-item">
-                    <h2 class="header-services">Graphic Design</h2>
+                    <h2 class="header-services">{{services[3].title}}</h2>
                 </div>
                 <p class="title-services">
-                    Most people prefer visual content. Using marketing campaigns through visual content such as videos
-                    can impact the reach, engagement and sales of your business.
+                    {{services[3].description}}
                 </p>
-                <div class="main-green-button"><a href="/services/detail#video-editing">See more</a></div>
+                <div class="main-green-button"><a href="/services/{{services[3].slug}}">See more</a></div>
             </div>
             <div class="col-lg-6">
                 <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../../../assets/img/layanan-design-graphic.png" alt="">
+                    <img src="{{services[3].img_service}}" alt="">
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </div>
 <div id="about-us" class="about-us section mt-5">
@@ -259,7 +252,7 @@
             </div>
         </div>
     </div>
-    <div class="container text-center" style="position: relative;">
+    <div class="container text-center features" style="position: relative;">
         <div class="main-carousel">
             <div class="carousel-cell">
                 <div class="row">

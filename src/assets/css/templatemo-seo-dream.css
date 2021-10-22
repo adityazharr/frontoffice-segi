@@ -942,7 +942,7 @@ Features Style
   position: relative;
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 0px 200px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .features-tag {

@@ -4,13 +4,14 @@ import * as AOS from 'aos';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import { Meta } from '@angular/platform-browser';
+import { SupabaseService } from 'src/app/supabase.service';
 
-export interface PhotosApi {
-  albumId?: number;
+export interface Services {
   id?: number;
   title?: string;
-  url?: string;
-  thumbnailUrl?: string;
+  description?: string;
+  img_product?: string;
+  slug?: string;
 }
 
 SwiperCore.use([EffectCoverflow, Pagination]);
@@ -22,6 +23,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 })
 
 export class HomeComponent implements OnInit {
+  services: any;
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -50,7 +52,7 @@ export class HomeComponent implements OnInit {
     nav: false
   }
 
-  constructor(private meta: Meta) {
+  constructor(private meta: Meta, private readonly supabase: SupabaseService) {
 
     this.meta.addTags([
       { name: 'title', content: 'Secangkir Teknologi' },
@@ -61,9 +63,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
+    this.getService()
   }
 
-  iconArrowRight = faArrowCircleRight;
-
-
+  async getService() {
+    let service = await this.supabase.getAllService();
+    this.services = service.data
+  }
 }
