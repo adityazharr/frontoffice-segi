@@ -1,485 +1,636 @@
-<style>
-    .img-works {
-        height: 150px;
-        width: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 20px;
-    }
-
-    .works-description {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .works-title {
-        font-size: 20pt;
-    }
-
-    .works-title a {
-        text-decoration: none;
-        color: #0c0a0a;
-        font-weight: 500;
-    }
-
-    .our-team {
-        padding: 20px 15px 30px;
-        /* background: #fff; */
-        border-radius: 15px;
-        text-align: center;
-    }
-
-    .our-team .pic {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        /* background: #fff; */
-        padding: 10px;
-        margin-bottom: 25px;
-        transition: all 0.1s ease 0s;
-    }
-
-    .our-team:hover .pic {
-        border: 5px solid #4771cb;
-        border-radius: 50%;
-    }
-
-    .pic img {
-        width: 100%;
-        height: auto;
-        border-radius: 1%;
-    }
-
-    .our-team .title {
-        display: block;
-        font-size: 20px;
-        font-weight: 600;
-        color: #2e282a;
-        text-transform: uppercase;
-        margin: 0 0 7px 0;
-    }
-
-    .our-team .post {
-        display: block;
-        font-size: 15px;
-        color: #4771cb;
-        text-transform: capitalize;
-        margin-bottom: 15px;
-    }
-
-    .our-team .social {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    .our-team .social li {
-        display: inline-block;
-        margin-right: 5px;
-    }
-
-    .our-team .social li a {
-        display: block;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        border-radius: 50%;
-        font-size: 15px;
-        color: #4771cb;
-        border: 1px solid #4771cb;
-        transition: all 0.5s ease 0s;
-    }
-
-    .our-team:hover .social li a {
-        background: #4771cb;
-        color: #fff;
-    }
-
-    @media only screen and (max-width: 990px) {
-        .our-team {
-            margin-bottom: 30px;
-        }
-    }
-</style>
-<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
+<div id="content" class="site-content">
+    <section class="banner big-padding-top bg-banner-gradient particles-js" data-color="#ffffff, #00c3ff, #fe4c1c" data-id="i1">
+        <div class="bg-overlay-1"></div>
+        <div class="shape shape-bottom" data-negative="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"></path>
+            </svg>
+        </div>
+        <div class="banner-wrap">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif">SECANGKIR
-                                        TEKNOLOGI</h2>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="main-blue-button scroll-to-section">
-                                        <!-- <a onclick="document.getElementById('popupSignUp').style.display='block'"
-                                            style="cursor: pointer;">Sign Up Now</a> -->
-                                        <!-- <a style="cursor: pointer;">Sign Up Now</a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <img src="../../../../assets/img/service/hero.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="our-services" class="our-services section">
-    <img src="../../../../assets/img/service/bg-ourservice-1.svg" alt="" style="position: absolute;">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>Our Services</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[0].img_service}}" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[0].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[0].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[0].slug}}">See more</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[1].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[1].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[1].slug}}">See more</a></div>
-            </div>
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[1].img_service}}" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[2].img_service}}" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[2].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[2].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[2].slug}}">See more</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[3].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[3].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[3].slug}}">See more</a></div>
-            </div>
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[3].img_service}}" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="about-us" class="about-us section mt-5">
-    <img src="../../../../assets/img/service/bg-ourservice-2.svg" alt="" style="position: absolute;">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>About Us</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container ">
-        <div class="row">
-            <div class="col-lg-8 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <p style="font-size: 15pt; text-align: justify;">
-                    Secangkir Teknologi is a vessel that unites freelance to the company or entrepreneurs who are
-                    looking for Production applications, design services, and video editing services. <br>
-
-                    In addition, we also provide applications for companies in search of applications ready for use
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../../../assets/img/new_asset/top-char.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="works" class="work section mt-5 mb-5">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 mb-5">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>Our Works</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center features" style="position: relative;">
-        <div class="main-carousel">
-            <div class="carousel-cell">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="features-content">
-                            <div class="features-item">
-                                <img src="../../../../assets/img/works/mogawe-logo.png" class="img-works" alt="">
-                                <div class="works-title text-center">
-                                    <a href="javascript:void(0)">MoGawe Bisnis</a>
-                                </div>
-                                <div class="works-description">
-                                    <span>
-                                        <span style="color: #4771cb;">MoGawe</span> is an Android application that can
-                                        give you
-                                        income starting from IDR 200 thousand per day just by doing simple tasks
-                                        (gawean). We modify mogawe website
-                                        and mobile application to fixing bugs & error and redesign some design layouts
+                    <div class="col-md-12 text-center">
+                        <h6 class="banner-title m-b0">WHAT'S YOUR SEO SCORE</h6>
+                        <h2 class="banner-stitle m-b55 xs-m-b40">We are Full Service<br><span class="text-second">SEO Agency</span></h2>
+                        <div class="wpcf7">
+                            <div class="screen-reader-response"></div>
+                            <form action="seoform.php" method="POST" class="wpcf7-form">
+                                <div class="seo-score one-line-form">
+                                    <span class="wpcf7-form-control-wrap your-url">
+                                        <input type="url" name="url" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url" placeholder="Your Website URL" required="">
                                     </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="features-content">
-                            <div class="features-item">
-                                <!-- <img src="../../../../assets/img/works/porto-evote-unas.png" style="display: block;" alt=""> -->
-                                <img src="../../../../assets/img/works/unas-logo.png" class="img-works" alt="">
-                                <div class="works-title text-center">
-                                    <a href="https://isrcode.postel.go.id/dazumba/unas-evote-fo" target="_blank">UNAS
-                                        E-Vote</a>
-                                </div>
-                                <div class="works-description">
-                                    <span>
-                                        <span style="color: #4771cb;">UNAS E-Vote</span> is an application that is used
-                                        to support the selection of elections
-                                        at the
-                                        National University,
-                                        such as the election of the Chairman of the Association, the Chairman of the
-                                        Student
-                                        Executive Board, and so on.
+                                    <span class="wpcf7-form-control-wrap your-email">
+                                        <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email" placeholder="Email" required="">
                                     </span>
+                                    <button type="submit" class="octf-btn octf-btn-icon octf-btn-primary">Start Now<i class="flaticon-right-arrow-1"></i></button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div id="team" class="work section mt-5 mb-5">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>Our Teams</h2>
-                </div>
+    </section>
+    <section class="about-home bg-light">
+        <div class="container">
+            <div class="about-home-img text-center">
+                <img src="https://via.placeholder.com/884x592.png" alt="onum">
             </div>
         </div>
-    </div>
-    <div class="container text-center">
-        <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Dwiky.png">
-                    </div>
-                    <h3 class="title">Dwiky Aliansyah</h3>
-                    <span class="post">Director</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Aulia.png">
-                    </div>
-                    <h3 class="title">Aulia Aryaseta</h3>
-                    <span class="post">Head Of Operations</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Wisnu.png">
-                    </div>
-                    <h3 class="title">Wisnu Aldy Padma K.</h3>
-                    <span class="post">Head Of Product Development</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Kelvin.png">
-                    </div>
-                    <h3 class="title">Kelvin Febrian Go</h3>
-                    <span class="post">Head Of Technology</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Shanti.png">
-                    </div>
-                    <h3 class="title">Shanti Annisya Rachma</h3>
-                    <span class="post">Head Of Business Partner</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Kamila.png">
-                    </div>
-                    <h3 class="title">Hasna Kamila</h3>
-                    <span class="post">Finance</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Regita.png">
-                    </div>
-                    <h3 class="title">Regita Syahyani</h3>
-                    <span class="post">Secretary</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-        </owl-carousel-o>
-    </div>
-</div>
-<div id="popupSignUp" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom" style="top: 20%; border-radius: 20px;">
+    </section>
+    <section class="seo-about p-b30">
+        <div class="shape shape-bottom" data-negative="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="shape-fill" d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z"></path>
+            </svg>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 wow" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <form id="contact" action="" method="post">
+                <div class="top-up">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="icon-box s3 box-hover-gradient text-center">
+                            <div class="bg-s3"></div>
+                            <div class="bg-before" style="background: url('../../../../assets/images/bg1-box.png') top left no-repeat #fff;"></div>
+                            <div class="bg-after" style="background: url('../../../../assets/images/bg2-box.png') bottom right no-repeat #fff;"></div>
+                            <div class="icon-main">
+                                <span class="flaticon-startup"></span>
+                            </div>
+                            <div class="content-box">
+                                <h5>Awesome Results</h5>
+                                <p>We have seen great successes with everyone companies.</p>
+                            </div>
+                            <div class="action-box">
+                                <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                            </div>
+                                
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 m-t50">
+                        <div class="icon-box s3 box-hover-gradient text-center">
+                            <div class="bg-s3"></div>
+                            <div class="bg-before" style="background: url('../../../../assets/images/bg1-box2.png') top left no-repeat #fff;"></div>
+                            <div class="bg-after" style="background: url('../../../../assets/images/bg2-box2.png') bottom right no-repeat #fff;"></div>
+                            <div class="icon-main">
+                                <span class="flaticon-system"></span>
+                            </div>
+                            <div class="content-box">
+                                <h5>All Sizes Business</h5>
+                                <p>Every business and industry requires an approach.</p>
+                            </div>
+                            <div class="action-box">
+                                <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                            </div>
+                                
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 xs-m-t50">
+                        <div class="icon-box s3 box-hover-gradient text-center">
+                            <div class="bg-s3"></div>
+                            <div class="bg-before" style="background: url('../../../../assets/images/bg1-box3.png') top right no-repeat #fff;"></div>
+                            <div class="bg-after" style="background: url('../../../../assets/images/bg2-box3.png') bottom left no-repeat #fff;"></div>
+                            <div class="icon-main">
+                                <span class="flaticon-internet"></span>
+                            </div>
+                            <div class="content-box">
+                                <h5>Keep you in the Loop</h5>
+                                <p>You make sure you know how campaign is performing.</p>
+                            </div>
+                            <div class="action-box">
+                                <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                            </div>
+                                
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 m-t50">
+                        <div class="icon-box s3 box-hover-gradient text-center">
+                            <div class="bg-s3"></div>
+                            <div class="bg-before" style="background: url('../../../../assets/images/bg1-box2.png') top left no-repeat #fff;"></div>
+                            <div class="bg-after"></div>
+                            <div class="icon-main">
+                                <span class="flaticon-report"></span>
+                            </div>
+                            <div class="content-box">
+                                <h5>Significant ROI</h5>
+                                <p>To generate highly focused leads ready to purchases.</p>
+                            </div>
+                            <div class="action-box">
+                                <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-t35 p-b90 xs-p-t60 xs-p-b60 bg-about">
+        <div class="container">
+            <div class="row flex-row">
+                <div class="col-lg-6 col-md-12 col-xs-12 xs-p-b50 text-center">
+                    <img src="https://via.placeholder.com/570x600.png" class="" alt="onum">
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12 p-l95 xs-p-l15 p-r0 xs-p-r15 align-self-center">
+                    <div class="ot-heading left-align">
+                        <h6><span>about us</span></h6>
+                        <h2 class="main-heading m-b20">Grow Your Business<br>with Our SEO Agency</h2>
+                    </div>
+                    <p class="font22 text-dark">Over 10 years Onum helping companies reach their financial and branding goals.</p>
+                    <p class="m-b0 p-b45">Over the years, we have worked with Fortune 500s and brand-new startups. We help ambitious businesses like yours generate more profits by building awareness, driving web traffic, connecting with customers, and growing overall sales. Give us a call.</p>
+                    <div class="ot-button">
+                        <a href="#" class="octf-btn octf-btn-secondary octf-btn-icon"><span>Learn More <i class="flaticon-right-arrow-1"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-b420">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="partners">
+                        <div class="owl-carousel home-client-carousel">
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                            <div class="partners-slide">
+                                <a href="#" class="client-logo">
+                                    <figure class="partners-slide-inner">
+                                        <img class="partners-slide-image" src="https://via.placeholder.com/137x30.png" alt="">
+                                    </figure>                             
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="icon-box-grid text-center m-t--295">
+                <div class="col-md-4 no-padding">
+                    <div class="icon-box text">
+                        <div class="icon-main">
+                             <span class="flaticon-pie-chart"></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>Content Marketing</h5>
+                            <p>You can provide the answers that your potential customers are trying to find, so you can become the industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 no-padding">
+                    <div class="icon-box">
+                        <div class="icon-main">
+                             <span class="flaticon-pie-chart-1"></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>Social Marketing</h5>
+                            <p>Create and manage top-performing social campaigns and start developing a dedicated customer fan base.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 no-padding">
+                    <div class="icon-box">
+                        <div class="icon-main">
+                            <span class="flaticon-document"></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>App Development</h5>
+                            <p>Create, publish, and promote engaging content to generate more traffic and build a dedicated community. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 no-padding">
+                    <div class="icon-box">
+                        <div class="icon-main">
+                            <span class="flaticon-search-1"></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>SEO Optimization</h5>
+                            <p>Get more website traffic, more customers, and more online visibility with powerful  SEO services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 no-padding">
+                    <div class="icon-box">
+                        <div class="icon-main">
+                            <span class="flaticon-coding"></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>Web  Development</h5>
+                            <p>Your website has to impress your visitors within just a few seconds. If it runs slow, if it feels outdated.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 no-padding">
+                    <div class="icon-box">
+                        <div class="icon-main">
+                            <span class="flaticon-cloud-computing"></span>
+                        </div>
+                        <div class="content-box">
+                            <h5>PPC Advertising</h5>
+                            <p>Target your ideal search phrases and get  found at the top of Google’s search results. PPC allows you.immediate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section class="p-t120 p-b290 bg-pricing">
+        <div class="container">
+            <div class="ot-heading text-center">
+                <h6><span>choose your plan</span></h6>
+                <h2 class="main-heading">Flexible Pricing Plans</h2>
+            </div>
+            <p class="text-center m-b40">We have experience working with large and small businesses and are ready to<br>
+            develop a targeted strategy and plan that’s just right for you.</p>
+            <div class="row">
+                <div class="col-md-4 sm-p-b60">
+                    <div class="ot-pricing-table bg-shape s1">
+                        <span class="title-table">Standard</span>
+                        <div class="inner-table">
+                            <img src="https://via.placeholder.com/93x116.png" alt="Standard">
+                            <h2><sup>$</sup> 69.99</h2>
+                            <p>Monthly Package</p>
+                            <div class="details">
+                                <ul>
+                                    <li>Social Media Marketing</li>
+                                    <li>2.100 Keywords</li>
+                                    <li>One Way Link Building</li>
+                                    <li>5 Free Optimization</li>
+                                    <li>3 Press Releases</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="octf-btn octf-btn-icon octf-btn-secondary">Choose Plane <i class="flaticon-right-arrow-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 sm-p-b60">
+                    <div class="ot-pricing-table bg-shape s2">
+                        <span class="title-table">Economy</span>
+                        <div class="inner-table">
+                            <img src="https://via.placeholder.com/93x116.png" alt="Economy">
+                            <h2><sup>$</sup> 79.99</h2>
+                            <p>Monthly Package</p>
+                            <div class="details">
+                                <ul>
+                                    <li>Social Media Marketing</li>
+                                    <li>3.100 Keywords</li>
+                                    <li>One Way Link Building</li>
+                                    <li>10 Free Optimization</li>
+                                    <li>5 Press Releases</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="octf-btn octf-btn-icon octf-btn-third">Choose Plane <i class="flaticon-right-arrow-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ot-pricing-table bg-shape s3">
+                        <span class="title-table">Executive</span>
+                        <div class="inner-table">
+                            <img src="https://via.placeholder.com/93x116.png" alt="Executive">
+                            <h2><sup>$</sup> 89.99</h2>
+                            <p>Monthly Package</p>
+                            <div class="details">
+                                <ul>
+                                    <li>Social Media Marketing</li>
+                                    <li>5.100 Keywords</li>
+                                    <li>One Way Link Building</li>
+                                    <li>15 Free Optimization</li>
+                                    <li>10 Press Releases</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="octf-btn octf-btn-icon octf-btn-primary">Choose Plane <i class="flaticon-right-arrow-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-b130 bg-counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="shadow-primary p-t100 p-b100 btn-rounder bg-cover text-center m-t--140" style="background: url('../../../../assets/images/bg-counter-1.jpg') center center no-repeat;">
+                        <div class="bg-overlay"></div>
                         <div class="row">
-                            <div class="col-lg-6 offset-lg-3">
-                                <div class="section-heading">
-                                    <h2><em>SIGN UP</em></h2>
+                            <div class="col-md-3 col-sm-6 sm-m-b40 xs-m-b40">
+                                <div class="ot-counter s2">
+                                    <h6>ACTIVE CLIENTS</h6> 
+                                    <div>
+                                        <span class="num" data-to="330" data-time="2000">0</span>
+                                        <span>+</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="name" name="name" id="name" placeholder="Name"
-                                                autocomplete="on" required>
-                                        </fieldset>
+                            <div class="col-md-3 col-sm-6 xs-m-b40 sm-m-b40">
+                                <div class="ot-counter s2">
+                                    <h6>PROJECTS DONE</h6>  
+                                    <div>
+                                        <span class="num" data-to="850" data-time="2000">0</span>
+                                        <span>+</span>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="surname" name="surname" id="surname" placeholder="Surname"
-                                                autocomplete="on" required>
-                                        </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 xs-m-b40">
+                                <div class="ot-counter s2">
+                                    <h6>TEAM ADVISORS</h6>  
+                                    <div>
+                                        <span class="num" data-to="25" data-time="2000">0</span>
+                                        <span>+</span>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                                placeholder="Your Email" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <input type="password" name="password" id="password" placeholder="Password"
-                                                autocomplete="on" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="main-blue-button">Sign
-                                                Up</button>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <button
-                                                onclick="document.getElementById('popupSignUp').style.display='none'"
-                                                type="button" class="main-button">Cancel</button>
-                                        </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="ot-counter s2">
+                                    <h6>GLORIOUS YEARS</h6> 
+                                    <div>
+                                        <span class="num" data-to="10" data-time="2000">0</span>
+                                        <span>+</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
+                    <div class="p-t120">
+                        <div class="row flex-row align-items-end">
+                            <div class="col-lg-6 col-md-12 col-xs-12 xs-m-b40">
+                                <div class="ot-heading">
+                                    <h6><span>why choose us</span></h6>
+                                    <h2 class="main-heading">Work with a Dedicated<br>SEO Company</h2>
+                                </div>
+                                <div class="ot-accordions">
+                                    <div class="acc-item current">
+                                        <span class="acc-toggle">Keyword &amp; Market Research <i class="down flaticon-arrow-pointing-to-down"></i><i class="up flaticon-arrow-pointing-to-up"></i></span>
+                                        <div class="acc-content active" style="display: block;">
+                                            Onum always works to stay on top of the latest trends and best practices to apply to your company projects.                     
+                                        </div>
+                                    </div>
+                                    <div class="acc-item">
+                                        <span class="acc-toggle">Graphics &amp; Interactive Content <i class="down flaticon-arrow-pointing-to-down"></i><i class="up flaticon-arrow-pointing-to-up"></i></span>
+                                        <div class="acc-content">
+                                            <p>We help ambitious businesses like yours generate more profits by building awareness, driving web traffic, connecting with customers.</p>             
+                                        </div>
+                                    </div>
+                                    <div class="acc-item">
+                                        <span class="acc-toggle">Social Media Promotion <i class="down flaticon-arrow-pointing-to-down"></i><i class="up flaticon-arrow-pointing-to-up"></i></span>
+                                        <div class="acc-content">
+                                            <p>Google has said for years that the most important single factor to them is high quality content. Now more than ever, they have the ability.</p>              
+                                        </div>
+                                    </div>
+                                    <div class="acc-item">
+                                        <span class="acc-toggle">Digital PR &amp; Penalty Recovery <i class="down flaticon-arrow-pointing-to-down"></i><i class="up flaticon-arrow-pointing-to-up"></i></span>
+                                        <div class="acc-content">
+                                            <p>We help ambitious businesses like yours generate more profits by building awareness, driving web traffic, connecting with customers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-xs-12 text-center">
+                                <img src="https://via.placeholder.com/570x423.png" alt="seo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="p-b40 xs-p-b0">
+        <div class="row">
+            <div class="col-md-1/5 col-sm-6 col-xs-12">
+                <div class="team-wrap sm-p-t0 p-t200">
+                    <div class="team-thumb">
+                        <img src="https://via.placeholder.com/356x356.png" alt="Gina Bruno">
+                    </div>
+                    <div class="team-info">
+                        <h4>Gina Bruno</h4>
+                        <span>WEB Designer</span>
+                        <div class="team-social">
+                            <a target="_blank" href="#" class="twitter"><i class="fab fab fa-twitter"></i></a>
+                            <a target="_blank" href="#" class="facebook"><i class="fab fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#" class="pinterest"><i class="fab fab fa-pinterest-p"></i></a>
+                            <span class="flaticon-add-1"></span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1/5 col-sm-6 col-xs-12">
+                <div class="team-wrap sm-p-t50 p-t150">
+                    <div class="team-thumb">
+                        <img src="https://via.placeholder.com/356x356.png" alt="David Ferry">
+                    </div>
+                    <div class="team-info">
+                        <h4>David Ferry</h4>
+                        <span>CTO of Company</span>
+                        <div class="team-social">
+                            <a target="_blank" href="#" class="twitter"><i class="fab fab fa-twitter"></i></a>
+                            <a target="_blank" href="#" class="facebook"><i class="fab fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#" class="pinterest"><i class="fab fab fa-pinterest-p"></i></a>
+                            <span class="flaticon-add-1"></span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1/5 col-sm-6 col-xs-12">
+                <div class="team-wrap sm-p-t0 p-t100">
+                    <div class="team-thumb">
+                        <img src="https://via.placeholder.com/356x356.png" alt="Christina Tores">
+                    </div>
+                    <div class="team-info">
+                        <h4>Christina Tores</h4>
+                        <span>CEO of Company</span>
+                        <div class="team-social">
+                            <a target="_blank" href="#" class="twitter"><i class="fab fab fa-twitter"></i></a>
+                            <a target="_blank" href="#" class="facebook"><i class="fab fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#" class="pinterest"><i class="fab fab fa-pinterest-p"></i></a>
+                            <span class="flaticon-add-1"></span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1/5 col-sm-6 col-xs-12">
+                <div class="team-wrap p-t50">
+                    <div class="team-thumb">
+                        <img src="https://via.placeholder.com/356x356.png" alt="Regina Blackly">
+                    </div>
+                    <div class="team-info">
+                        <h4>Regina Blackly</h4>
+                        <span>WEB Developer</span>
+                        <div class="team-social">
+                            <a target="_blank" href="#" class="twitter"><i class="fab fab fa-twitter"></i></a>
+                            <a target="_blank" href="#" class="facebook"><i class="fab fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#" class="pinterest"><i class="fab fab fa-pinterest-p"></i></a>
+                            <span class="flaticon-add-1"></span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1/5 col-sm-6 col-xs-12">
+                <div class="team-wrap">
+                    <div class="team-thumb">
+                        <img src="https://via.placeholder.com/356x356.png" alt="Olivia Chee">
+                    </div>
+                    <div class="team-info">
+                        <h4>Olivia Chee</h4>
+                        <span>General Manager</span>
+                        <div class="team-social">
+                            <a target="_blank" href="#" class="twitter"><i class="fab fab fa-twitter"></i></a>
+                            <a target="_blank" href="#" class="facebook"><i class="fab fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#" class="pinterest"><i class="fab fab fa-pinterest-p"></i></a>
+                            <span class="flaticon-add-1"></span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-t80 bg-testi">
+        <div class="bg-overlay-testi"></div>
+        <div class="container">
+            <div class="flex-row">
+                <div class="col-md-4 col-xs-12 align-self-center">
+                    <div class="ot-heading heading-testimonials left-align">
+                        <h6><span>real testimonials</span></h6>
+                        <h2 class="main-heading">What They<br>Say About Our<br>Company?</h2>
+                    </div>
+                    <div class="testicustom-slider-nav"></div>
+                </div>
+                <div class="col-md-8 col-xs-12 ot-testimonials-heading">
+                    <div class="ot-testimonials">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-inner ot-testimonials-slider">
+                                <div>
+                                    <img src="https://via.placeholder.com/100x100.png" alt="Michael Terry">
+                                    <div class="ttext">
+                                        Onum has increased our traffic, keywords, and conversion. We’ve enjoyed working with them and consider them a strategic business partner.
+                                    </div>
+                                    <div class="tinfo">
+                                        <h6>Michael Terry</h6>
+                                        <span>Developer</span> 
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="https://via.placeholder.com/100x100.png" alt="Emilia Clarke">
+                                    <div class="ttext">
+                                        I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.
+                                    </div>
+                                    <div class="tinfo">
+                                        <h6>Emilia Clarke</h6>
+                                        <span>Manager</span> 
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="https://via.placeholder.com/100x100.png" alt="Cristian Torres">
+                                    <div class="ttext">
+                                        I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. Thank you!
+                                    </div>
+                                    <div class="tinfo">
+                                        <h6>Cristian Torres</h6>
+                                        <span>Designer</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="p-t330 p-b210 cta bg-cta particles-js" data-color="#fe4c1c,#00c3ff,#0160e7" data-id="i1-1">
+        <div class="bg-overlay opacity-1"></div>
+        <div class="shape shape-top" data-negative="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="shape-fill" d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2 class="m-b20">Take Your Website to Next<br>Level Right Now!</h2>
+                <p class="m-b35">Make the Right Choice for Your Future. Choose Onum!</p>
+                <div class="ot-button">
+                    <a href="#" class="octf-btn octf-btn-primary octf-btn-icon"><span>Start Now<i class="flaticon-right-arrow-1"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
