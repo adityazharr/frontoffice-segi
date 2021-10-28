@@ -1,500 +1,305 @@
-<style>
-    .img-works {
-        height: 150px;
-        width: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 20px;
-    }
+<section class="section-slideshow pb-5" id="slideshow">
+    <div class="slideshow-st container">
+        <div class="slideshow-st-content d-flex flex-row align-items-center justify-content-between">
+            <div class="slideshow-st-content align-items-start justify-content-center">
+                <div class="title-slideshow-st" data-aos="fade-up" data-aos-duration="1000">
+                    <label class="text-blue">SECANGKIR TEKNOLOGI</label>
+                </div>
+                <div class="description-slideshow-st" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <p class="text-blue">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <button class="btn btn-primary btn-block px-5"> Register Now </button>
+                </div>
+            </div>
+            <img src="../../../../assets/img/new_asset/top-char.png" class="thumbnail-slideshow-img"/>
+            <!-- <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of apiData">
+                    <ng-template class="slide" carouselSlide [id]="slide.id">
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o> -->
+        </div>
+    </div>
+</section>
+<div class="wave-content"></div>
 
-    .works-description {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .works-title {
-        font-size: 20pt;
-    }
-
-    .works-title a {
-        text-decoration: none;
-        color: #0c0a0a;
-        font-weight: 500;
-    }
-
-    .our-team {
-        padding: 20px 15px 30px;
-        /* background: #fff; */
-        border-radius: 15px;
-        text-align: center;
-    }
-
-    .our-team .pic {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        /* background: #fff; */
-        padding: 10px;
-        margin-bottom: 25px;
-        transition: all 0.1s ease 0s;
-    }
-
-    .our-team:hover .pic {
-        border: 5px solid #4771cb;
-        border-radius: 50%;
-    }
-
-    .pic img {
-        width: 100%;
-        height: auto;
-        border-radius: 1%;
-    }
-
-    .our-team .title {
-        display: block;
-        font-size: 20px;
-        font-weight: 600;
-        color: #2e282a;
-        text-transform: uppercase;
-        margin: 0 0 7px 0;
-    }
-
-    .our-team .post {
-        display: block;
-        font-size: 15px;
-        color: #4771cb;
-        text-transform: capitalize;
-        margin-bottom: 15px;
-    }
-
-    .our-team .social {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    .our-team .social li {
-        display: inline-block;
-        margin-right: 5px;
-    }
-
-    .our-team .social li a {
-        display: block;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        border-radius: 50%;
-        font-size: 15px;
-        color: #4771cb;
-        border: 1px solid #4771cb;
-        transition: all 0.5s ease 0s;
-    }
-
-    .our-team:hover .social li a {
-        background: #4771cb;
-        color: #fff;
-    }
-
-    @media only screen and (max-width: 990px) {
-        .our-team {
-            margin-bottom: 30px;
-        }
-    }
-</style>
-<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-6 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif">SECANGKIR
-                                        TEKNOLOGI</h2>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="main-blue-button scroll-to-section">
-                                        <!-- <a onclick="document.getElementById('popupSignUp').style.display='block'"
-                                            style="cursor: pointer;">Sign Up Now</a> -->
-                                        <!-- <a style="cursor: pointer;">Sign Up Now</a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <img src="../../../../assets/img/service/hero.png" />
-                        </div>
-                    </div>
+<section class="section-services py-5 container" id="service">
+    <div class="title-services text-right" data-aos="fade-up" data-aos-duration="2000">
+        <h2 style="color: '#2B5278'">Our Services</h2>
+        <h2 class="About-Big">Lorem ipsum dolor sit amet, consectur</h2>
+    </div>
+    <div class="row">
+        <!-- <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex flex-row align-items-center justify-content-center">
+            <div class="image-services">
+                <img src="../../../../assets/img/thumbnail.jpeg" class="rounded w-100"/>
+            </div>
+    
+            <div class="mx-3">
+                <div class="flex-row align-items-center desc-service">
+                    <h5 style="color: #4162ac;">WEB APPLICATION</h5>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/service/web-application.svg" class="rounded float-start"/>
+            </div>
+    
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 style="color: #4162ac;">WEB APPLICATION</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block px-5" aria-current="page" routerLink="/services/detail"> See more </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 style="color: #4162ac;">MANAGE SOCIAL MEDIA</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block px-5" aria-current="page" routerLink="/services/detail"> See more </a>
+                </div>
+            </div>
+            <div class="image-services" data-aos="fade-down-left" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/service/manage-social-media.png" class="rounded float-start"/>
+            </div>
+        </div>
+        <div class="body-services d-flex flex-row justify-content-center mb-5">
+            <div class="image-services" data-aos="fade-down-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                <img src="../../../../assets/img/service/video-editing.svg" class="rounded float-start"/>
+            </div>
+    
+            <div class="d-flex flex-row align-items-center mx-3">
+                <div class="flex-row align-items-center">
+                    <h1 style="color: #4162ac;">VIDEO EDITING</h1>
+                    <p class="text-description">
+                        Secangkir Technology is a student community, to help and provide the best learning for students who want to get additional lessons.
+                    </p>
+                    <p class="text-description">
+                        Starting from the desire to use free time for meaningful things, the founders built Secupkir Ilmu. The main purpose of this community is to provide additional learning to develop interests and talents.
+                    </p>
+                    <a class="btn btn-primary btn-block px-5" aria-current="page" routerLink="/services/detail"> See more </a>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+<section class="section-about" id="about-us">
+    <div class="d-flex flex-row align-items-md-start justify-content-between">
+        <img src="../../../../assets/img/new_asset/top-center.png" class="img-fluid" style="width: 800px;">
+        <div class="layertwo-about">
+            <img src="../../../../assets/img/new_asset/about.png" class="img-fluid w-100">            
+            <p class="desc-about mt-5" data-aos="fade-up" data-aos-duration="3000">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="title-box text-center">
+    <h3 class="title">Our Works</h3>
 </div>
+<section class="section-work container py-5" id="work">
+    <div class="row" style="margin-top: 140px; margin-bottom: 140px;">
+        <div class="col-md-6">
+            <h1 class="title-page text-blue">Our <br> Work</h1>
+            <span class="text-blue"><b>In addition to media types, there are also media features. Media features provide more specific details to media queries In addition to media types, there are also media features. Media features provide more specific details to media queries In addition to media types, there are also media features. Media features provide more specific details to media queries</b></span>
+            <!-- <img src="../../../../assets/img/new_asset/our-work.png" class="img-ourWork" alt=""> -->
+        </div>
+        <div class="col-md"></div>
+        <div class="col-md-4">
+            
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../../../assets/img/new_asset/slide1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../../../assets/img/new_asset/slide1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../../../assets/img/new_asset/slide1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
-<div id="our-services" class="our-services section">
-    <img src="../../../../assets/img/service/bg-ourservice-1.svg" alt="" style="position: absolute;">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>Our Services</h2>
-                </div>
-            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[0].img_service}}" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[0].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[0].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[0].slug}}">See more</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[1].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[1].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[1].slug}}">See more</a></div>
-            </div>
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[1].img_service}}" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[2].img_service}}" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[2].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[2].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[2].slug}}">See more</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="about-item">
-                    <h2 class="header-services">{{services[3].title}}</h2>
-                </div>
-                <p class="title-services">
-                    {{services[3].description}}
-                </p>
-                <div class="main-green-button"><a href="/services/{{services[3].slug}}">See more</a></div>
-            </div>
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{services[3].img_service}}" alt="">
-                </div>
-            </div>
-        </div>
+    <!-- <div class="title-box text-center">
+        <h3 class="title">Our Works</h3>
     </div>
-</div>
-<div id="about-us" class="about-us section mt-5">
-    <img src="../../../../assets/img/service/bg-ourservice-2.svg" alt="" style="position: absolute;">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>About Us</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container ">
-        <div class="row">
-            <div class="col-lg-8 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <p style="font-size: 15pt; text-align: justify;">
-                    Secangkir Teknologi is a vessel that unites freelance to the company or entrepreneurs who are
-                    looking for Production applications, design services, and video editing services. <br>
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="3000">
+        <swiper
+        [effect]="'coverflow'"
+        [grabCursor]="true"
+        [centeredSlides]="true"
+        [coverflowEffect]="coverflowEffect"
+        [loop]="true"
+        class="mySwiper"
+        >
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-1.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-2.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-3.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-5.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-6.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-7.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-8.jpg" class="img-swiper" /></ng-template>
+            <ng-template swiperSlide class="text-center"><img src="https://swiperjs.com/demos/images/nature-9.jpg" class="img-swiper" /></ng-template>
+        </swiper>
+    </div> -->
+</section>
 
-                    In addition, we also provide applications for companies in search of applications ready for use
-                </p>
+<section class="section-teams d-flex flex-column align-items-center justify-content-md-center" id='teams'>
+    <div class="intro-teams">
+        <h3 class="title" data-aos="fade-up" data-aos-duration="3000"> Our Teams </h3>
+    </div>
+    <div class="teams-detail text-center align-items-center">
+        <div class="d-flex">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/adrian.png" class="img-team"/>
+                <h3 class="name-team">Adrian Milano</h3>
+                <span>Penanggung Jawab</span>
             </div>
-            <div class="col-lg-4">
-                <div class="left-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../../../assets/img/new_asset/top-char.png" alt="">
-                </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/shanti.png" class="img-team"/>
+                    <h3 class="name-team">Shanti Annisya. R</h3>
+                <span>PSDM & Controlling</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/wisnu.png" class="img-team"/>
+                <h3 class="name-team">Wisnu Aldy Padma .K</h3>
+                <span>Desain Pembelajaran</span>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/mila.png" class="img-team"/>
+                <h3 class="name-team">Nur Charisa</h3>
+                <span>Administrasi</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/tata.png" class="img-team"/>
+                <h3 class="name-team">Regita Syahyani</h3>
+                <span>Desain Grafis</span>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://secangkirilmu.web.id/v1/assets/img/fasilitator/cile.png" class="img-team"/>
+                <h3 class="name-team">Hasna Kamila</h3>
+                <span>Program Dan Acara</span>
             </div>
         </div>
     </div>
-</div>
-<div id="works" class="work section mt-5 mb-5">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 mb-5">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>Our Works</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center features" style="position: relative;">
-        <div class="main-carousel">
-            <div class="carousel-cell">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="features-content">
-                            <div class="features-item">
-                                <img src="../../../../assets/img/works/mogawe-logo.png" class="img-works" alt="">
-                                <div class="works-title text-center">
-                                    <a href="javascript:void(0)">MoGawe Bisnis</a>
-                                </div>
-                                <div class="works-description">
-                                    <span>
-                                        <span style="color: #4771cb;">MoGawe</span> is an Android application that can
-                                        give you
-                                        income starting from IDR 200 thousand per day just by doing simple tasks
-                                        (gawean). We modify mogawe website
-                                        and mobile application to fixing bugs & error and redesign some design layouts
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="features-content">
-                            <div class="features-item">
-                                <!-- <img src="../../../../assets/img/works/porto-evote-unas.png" style="display: block;" alt=""> -->
-                                <img src="../../../../assets/img/works/unas-logo.png" class="img-works" alt="">
-                                <div class="works-title text-center">
-                                    <a href="https://isrcode.postel.go.id/dazumba/unas-evote-fo" target="_blank">UNAS
-                                        E-Vote</a>
-                                </div>
-                                <div class="works-description">
-                                    <span>
-                                        <span style="color: #4771cb;">UNAS E-Vote</span> is an application that is used
-                                        to support the selection of elections
-                                        at the
-                                        National University,
-                                        such as the election of the Chairman of the Association, the Chairman of the
-                                        Student
-                                        Executive Board, and so on.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="team" class="work section mt-5 mb-5">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <h2>Our Teams</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://secangkirilmu.id/admin/images/tim/16338878556163266fbe98e.png">
-                    </div>
-                    <h3 class="title">Adrian Milano</h3>
-                    <span class="post">Director</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Dwiky.png">
-                    </div>
-                    <h3 class="title">Dwiky Aliansyah</h3>
-                    <span class="post">Chief Executive Officer</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Aulia.png">
-                    </div>
-                    <h3 class="title">Aulia Aryaseta</h3>
-                    <span class="post">Head Of Operations</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Wisnu.png">
-                    </div>
-                    <h3 class="title">Wisnu Aldy Padma K.</h3>
-                    <span class="post">Head Of Product Development</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Kelvin.png">
-                    </div>
-                    <h3 class="title">Kelvin Febrian Go</h3>
-                    <span class="post">Head Of Technology</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Shanti.png">
-                    </div>
-                    <h3 class="title">Shanti Annisya Rachma</h3>
-                    <span class="post">Head Of Business Partner</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Kamila.png">
-                    </div>
-                    <h3 class="title">Hasna Kamila</h3>
-                    <span class="post">Finance</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="../../../../assets/img/teams/Regita.png">
-                    </div>
-                    <h3 class="title">Regita Syahyani</h3>
-                    <span class="post">Secretary</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-google-plus"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </ng-template>
-        </owl-carousel-o>
-    </div>
-</div>
-<div id="popupSignUp" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom" style="top: 20%; border-radius: 20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 wow" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <form id="contact" action="" method="post">
-                        <div class="row">
-                            <div class="col-lg-6 offset-lg-3">
-                                <div class="section-heading">
-                                    <h2><em>SIGN UP</em></h2>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="name" name="name" id="name" placeholder="Name"
-                                                autocomplete="on" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="surname" name="surname" id="surname" placeholder="Surname"
-                                                autocomplete="on" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                                placeholder="Your Email" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <input type="password" name="password" id="password" placeholder="Password"
-                                                autocomplete="on" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="main-blue-button">Sign
-                                                Up</button>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <button
-                                                onclick="document.getElementById('popupSignUp').style.display='none'"
-                                                type="button" class="main-button">Cancel</button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</section>
